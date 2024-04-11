@@ -10,7 +10,7 @@ const About = () => {
     <div className='' id='Introduction'>
       <div className='bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 py-12 md:p-16 flex flex-col justify-center items-center gap-8'>
         <div className='w-full h-full flex justify-center items-center'>
-          <Image className='' src={'/images/banner/about-banner.png'} alt="about-banner" width={1000} height={1000} />
+          <Image className='' src={'/images/graphics/about-heading.png'} alt="about-banner" width={1000} height={1000} />
         </div>
         <div className='flex flex-col gap-4'>
           {/* <div className='flex gap-2'>

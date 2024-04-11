@@ -10,10 +10,11 @@ const Navbar = () => {
             </div>
             <div>
                 <div className='hidden md:flex justify-center items-center gap-4'>
-                    <Link href='#Introduction' className='uppercase font-bold text-[12px] px-4 py-2 border border-gray-800 hover:bg-secondaryBg hover:text-white'>Introduction</Link>
-                    <Link href='#Speakers' className='uppercase font-bold text-[12px] px-4 py-2 border border-gray-800 hover:bg-secondaryBg hover:text-white'>Speakers</Link>
-                    <Link href='#' className='uppercase font-bold text-[12px] px-4 py-2 border border-gray-800 hover:bg-secondaryBg hover:text-white'>Agenda</Link>
+                    <Link href='#Introduction' className='uppercase font-bold text-[12px] px-4 py-2 hover:border hover:border-gray-800 text-white bg-secondaryBg hover:bg-white hover:text-black'>Introduction</Link>
+                    <Link href='#Speakers' className='uppercase font-bold text-[12px] px-4 py-2 hover:border hover:border-gray-800 text-white bg-secondaryBg hover:bg-white hover:text-black'>Speakers</Link>
+                    <Link href='#' className='uppercase font-bold text-[12px] px-4 py-2 hover:border hover:border-gray-800 text-white bg-secondaryBg hover:bg-white hover:text-black'>Agenda</Link>
                 </div>
+                <div className='flex md:hidden'></div>
             </div>
         </nav>
     )
