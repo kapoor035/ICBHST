@@ -13,7 +13,7 @@ import {
 const Speakers = () => {
 
     const speakerGroups = speakers.reduce((groups: any[], speaker, index) => {
-        if (index % 4 === 0) {
+        if (index % 2 === 0) {
             groups.push([speaker]);
         } else {
             groups[groups.length - 1].push(speaker);
@@ -22,7 +22,7 @@ const Speakers = () => {
     }, []);
 
     return (
-        <div className='bg-[url(/images/bg/black-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 py-12 md:p-16 text-white' id='Speakers'>
+        <div className='bg-[url(/images/bg/black-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 py-12 md:p-16 xl:px-52 text-white' id='Speakers'>
             <div className='flex flex-col justify-center items-center gap-8 text-center'>
                 <h2 className='text-xl sm:text-2xl md:text-3xl font-black uppercase'>Speakers</h2>
                 <div className='hidden lg:flex justify-center items-center'>

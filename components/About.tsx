@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const aboutText = "As we embark on the concepts of Visit Bharat 2047 as put forward by the Honorable Prime Minister, Mr Narendra Modi, we owe the next generation of citizens a sustaining, economy that aligns with a healthy climate and compassionate human development. We are proposing multiple panels with speakers representing diverse industry, political and academic viewpoints. At the end of the conclave, the Conveners will develop a Consensus Document, which will be submitted to Niti Aayog and Published as an Editorial in Journal."
+const aboutText = "As we embark on the concepts of Viksit Bharat 2047 as put forward by the Honorable Prime Minister, Mr Narendra Modi, we owe the next generation of citizens a sustaining, economy that aligns with a healthy climate and compassionate human development. We are proposing multiple panels with speakers representing diverse industry, political and academic viewpoints. At the end of the conclave, the Conveners will develop a Consensus Document, which will be submitted to Niti Aayog and Published as an Editorial in Journal."
 
 const introText = "Current economic models have long relied on production and consumption, while inputs like generated waste, environmental and resource sustainability, and human resource development have been less emphasized. With the circular economy, we have an imperative to minimize material waste, reuse materials, promote resource and energy efficiency, and develop a regenerative economic model. All the while recognizing the importance of human development.  In this Conclave, we will bring together important thought leaders from different domains to share and deliberate how we can drive transformation towards a sustainable, equitable and circular economic future."
 
@@ -10,7 +10,7 @@ const About = () => {
     <div className='' id='Introduction'>
       <div className='bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 py-12 md:p-16 flex flex-col justify-center items-center gap-8'>
         <div className='w-full h-full flex justify-center items-center'>
-          <Image className='' src={'/images/graphics/about-heading.png'} alt="about-banner" width={1000} height={1000} />
+          <Image className='' src={'/images/graphics/about-banner.png'} alt="about-banner" width={1000} height={1000} />
         </div>
         <div className='flex flex-col gap-4'>
           {/* <div className='flex gap-2'>

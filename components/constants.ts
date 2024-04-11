@@ -13,16 +13,16 @@ export const speakers = [
     },
     {
         id: 3,
-        fullName: 'Vijender Chauhan',
+        fullName: 'Dr Vijender Singh Chauhan',
         des: 'UPSC expert, Associate Professor, DU',
         profileimage: '/images/speakers/Vijender-Chauhan.JPG',
     },
-    // {
-    //     id: 4,
-    //     fullName: 'Dr Pawan Kumar Singh',
-    //     des: 'Director, IIM Trichy',
-    //     profileimage: '',
-    // },
+    {
+        id: 4,
+        fullName: 'Dr Pawan Kumar Singh',
+        des: 'Director, IIM Trichy',
+        profileimage: '/images/speakers/Pawan-Kumar-Singh.jpg',
+    },
     {
         id: 5,
         fullName: 'Shuchi Sinha',
@@ -35,12 +35,12 @@ export const speakers = [
     //     des: 'Divisional Commissioner, Jaipur',
     //     profileimage: '',
     // },
-    // {
-    //     id: 7,
-    //     fullName: 'Dr Shiv Mohan',
-    //     des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
-    //     profileimage: '',
-    // },
+    {
+        id: 7,
+        fullName: 'Dr Shiv Mohan',
+        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
+        profileimage: '/images/speakers/Shiv-Mohan.jpg',
+    },
     {
         id: 8,
         fullName: 'Siddharth Rajhans',
@@ -79,14 +79,14 @@ export const speakers = [
     // },
     {
         id: 14,
-        fullName: 'Mrs Jayashree Periwal',
+        fullName: 'Dr Jayashree Periwal',
         des: 'Jayashree Periwal Group of Institutions',
         profileimage: '/images/speakers/Jayshree-Periwal.jpeg',
     },
-    // {
-    //     id: 15,
-    //     fullName: 'Dr Ajit Upadhyay',
-    //     des: 'Director, PIMR Indore',
-    //     profileimage: '',
-    // },
+    {
+        id: 15,
+        fullName: 'Dr Ajit Upadhyay',
+        des: 'Director, PIMR Indore',
+        profileimage: '/images/speakers/Ajit-Upadhyay.JPG',
+    },
 ];
