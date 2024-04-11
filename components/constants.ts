@@ -45,7 +45,7 @@ export const speakers = [
         id: 8,
         fullName: 'Siddharth Rajhans',
         des: 'Career Diplomat, UN | Economic Diplomacy',
-        profileimage: '/images/speakers/Siddharth-Rajhans.jpg',
+        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
     },
     // {
     //     id: 9,
@@ -63,7 +63,7 @@ export const speakers = [
         id: 11,
         fullName: 'Monika Singh',
         des: 'Sustainability expert in Aviation, IndiGo',
-        profileimage: '/images/speakers/Monika-Singh.JPG',
+        profileimage: '/images/speakers/Monika-Singh.jpg',
     },
     {
         id: 12,
