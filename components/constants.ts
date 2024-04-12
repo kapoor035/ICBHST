@@ -80,7 +80,7 @@ export const speakers = [
     {
         id: 14,
         fullName: 'Dr Jayashree Periwal',
-        des: 'Jayashree Periwal Group of Institutions',
+        des: 'Chairperson, Jayashree Periwal Group of Institutions',
         profileimage: '/images/speakers/Jayshree-Periwal.jpg',
     },
     {
