@@ -9,7 +9,13 @@ export const speakers = [
         id: 2,
         fullName: 'Vineeta Hariharan',
         des: 'Senior Leader, World Bank & Public Policy',
-        profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
+        profileimage: '/images/speakers/Vineeta-Hariharan.jpg',
+    },
+    {
+        id: 7,
+        fullName: 'Dr Shiv Mohan',
+        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
+        profileimage: '/images/speakers/Shiv-Mohan.jpg',
     },
     {
         id: 3,
@@ -36,16 +42,10 @@ export const speakers = [
     //     profileimage: '',
     // },
     {
-        id: 7,
-        fullName: 'Dr Shiv Mohan',
-        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
-        profileimage: '/images/speakers/Shiv-Mohan.jpg',
-    },
-    {
         id: 8,
         fullName: 'Siddharth Rajhans',
         des: 'Career Diplomat, UN | Economic Diplomacy',
-        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        profileimage: '/images/speakers/Siddharth-Rajhans.jpg',
     },
     // {
     //     id: 9,
@@ -81,7 +81,7 @@ export const speakers = [
         id: 14,
         fullName: 'Dr Jayashree Periwal',
         des: 'Jayashree Periwal Group of Institutions',
-        profileimage: '/images/speakers/Jayshree-Periwal.jpeg',
+        profileimage: '/images/speakers/Jayshree-Periwal.jpg',
     },
     {
         id: 15,

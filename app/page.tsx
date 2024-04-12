@@ -12,7 +12,7 @@ export default function Home() {
         <div className="relative z-10 -mt-80 md:-mt-28"><About /></div>
       </div>
       <Speakers />
-      <Banners />
+      {/* <Banners /> */}
     </main>
   );
 }
