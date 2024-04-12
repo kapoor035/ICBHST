@@ -9,7 +9,7 @@ export const speakers = [
         id: 2,
         fullName: 'Vineeta Hariharan',
         des: 'Senior Leader, World Bank & Public Policy',
-        profileimage: '/images/speakers/Vineeta-Hariharan.jpg',
+        profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
     },
     {
         id: 7,
@@ -45,7 +45,7 @@ export const speakers = [
         id: 8,
         fullName: 'Siddharth Rajhans',
         des: 'Career Diplomat, UN | Economic Diplomacy',
-        profileimage: '/images/speakers/Siddharth-Rajhans.jpg',
+        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
     },
     // {
     //     id: 9,
