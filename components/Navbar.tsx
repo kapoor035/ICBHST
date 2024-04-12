@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className='sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-start items-center gap-8 drop-shadow-xl'>
                 {menu.map((item) => (
-                    <Link key={item.id} href='#Introduction' className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                    <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
                 ))}
             </div>
         </>
