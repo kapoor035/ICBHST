@@ -8,7 +8,7 @@ export const speakers = [
     {
         id: 2,
         fullName: 'Vineeta Hariharan',
-        des: 'Senior Leader, World Bank & Public Policy',
+        des: 'Senior Leader, World Bank & Public Policy Expert',
         profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
     },
     {
@@ -20,18 +20,18 @@ export const speakers = [
     {
         id: 3,
         fullName: 'Dr Vijender Singh Chauhan',
-        des: 'UPSC expert, Associate Professor, DU',
+        des: 'UPSC Expert, Asso Professor, DU',
         profileimage: '/images/speakers/Vijender-Chauhan.JPG',
     },
     {
         id: 4,
         fullName: 'Dr Pawan Kumar Singh',
-        des: 'Director, IIM Trichy',
+        des: 'Director, IIM Trichy | Professor of HR',
         profileimage: '/images/speakers/Pawan-Kumar-Singh.jpg',
     },
     {
         id: 5,
-        fullName: 'Shuchi Sinha',
+        fullName: 'Dr Shuchi Sinha',
         des: 'Behavioural Scientist & Professor, IIT Delhi',
         profileimage: '/images/speakers/Shuchi-Sinha.JPG',
     },
@@ -43,8 +43,8 @@ export const speakers = [
     // },
     {
         id: 8,
-        fullName: 'Siddharth Rajhans',
-        des: 'Career Diplomat, UN | Economic Diplomacy',
+        fullName: 'R Siddharth',
+        des: 'Career Diplomat, UN | Adjunct Professor, MUJ',
         profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
     },
     // {
@@ -62,13 +62,13 @@ export const speakers = [
     {
         id: 11,
         fullName: 'Monika Singh',
-        des: 'Sustainability expert in Aviation, IndiGo',
+        des: 'Sustainability Expert in Aviation, IndiGo Airlines',
         profileimage: '/images/speakers/Monika-Singh.jpg',
     },
     {
         id: 12,
         fullName: 'Shilpa Mehta',
-        des: 'Director of PwC India',
+        des: 'Director of PwC India | IT Industry Expert',
         profileimage: '/images/speakers/Shilpa-Mehta.JPG',
     },
     // {
@@ -86,7 +86,7 @@ export const speakers = [
     {
         id: 15,
         fullName: 'Dr Ajit Upadhyay',
-        des: 'Director, PIMR Indore',
+        des: 'Director, PIMR Indore | Marketing Professor',
         profileimage: '/images/speakers/Ajit-Upadhyay.JPG',
     },
 ];
