@@ -89,4 +89,10 @@ export const speakers = [
         des: 'Director, PIMR Indore | Marketing Professor',
         profileimage: '/images/speakers/Ajit-Upadhyay.JPG',
     },
+    {
+        id: 16,
+        fullName: 'Chef K Thiru',
+        des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
+        profileimage: '/images/speakers/Chef-Thiru.jpg',
+    },
 ];
