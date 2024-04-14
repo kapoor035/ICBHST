@@ -95,4 +95,10 @@ export const speakers = [
         des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
         profileimage: '/images/speakers/Chef-Thiru.jpg',
     },
+    {
+        id: 17,
+        fullName: 'Dr Aravind Chinchure',
+        des: 'Founder & CEO, QLeap Academy, & Member of Board of Management at MUJ',
+        profileimage: '/images/speakers/Aravind-Chinchure.jpeg',
+    },
 ];
