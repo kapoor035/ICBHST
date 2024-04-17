@@ -18,7 +18,7 @@ const Hero = () => {
             <div className='absolute top-0 left-0 w-full h-full bg-black opacity-30'></div>
             <div className='px-4 text-center absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
                 <div className='-mt-80 md:-mt-24 sm:px-16'>
-                    <Image className='w-[700px]' src={'/images/graphics/hero-banner-colored.png'} alt='CirCon-24' width={1024} height={512} />
+                    <Image className='w-[700px]' src={'/images/graphics/hero-banner.png'} alt='CirCon-24' width={1024} height={512} />
                 </div>
             </div>
 

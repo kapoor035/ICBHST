@@ -8,7 +8,7 @@ export const speakers = [
     {
         id: 2,
         fullName: 'Vineeta Hariharan',
-        des: 'Senior Leader, World Bank & Public Policy Expert',
+        des: 'Senior Public Policy Expert',
         profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
     },
     {
@@ -32,7 +32,7 @@ export const speakers = [
     {
         id: 5,
         fullName: 'Dr Shuchi Sinha',
-        des: 'Behavioural Scientist & Professor, IIT Delhi',
+        des: 'Associate Professor, DMS, IIT Delhi',
         profileimage: '/images/speakers/Shuchi-Sinha.JPG',
     },
     // {
@@ -68,7 +68,7 @@ export const speakers = [
     {
         id: 12,
         fullName: 'Shilpa Mehta',
-        des: 'Director of PwC India | IT Industry Expert',
+        des: 'Executive Director, PwC India',
         profileimage: '/images/speakers/Shilpa-Mehta.JPG',
     },
     // {
@@ -86,7 +86,7 @@ export const speakers = [
     {
         id: 15,
         fullName: 'Dr Ajit Upadhyay',
-        des: 'Director, PIMR Indore | Marketing Professor',
+        des: 'Sr Professor, PIMR Indore, Former Director, PIMR Dewas',
         profileimage: '/images/speakers/Ajit-Upadhyay.JPG',
     },
     {
