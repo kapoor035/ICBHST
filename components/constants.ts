@@ -20,7 +20,7 @@ export const speakers = [
     {
         id: 3,
         fullName: 'Dr Vijender Singh Chauhan',
-        des: 'UPSC Expert, Asso Professor, DU',
+        des: 'UPSC Expert, Associate Professor, DU',
         profileimage: '/images/speakers/Vijender-Chauhan.JPG',
     },
     {
@@ -43,7 +43,7 @@ export const speakers = [
     // },
     {
         id: 8,
-        fullName: 'R Siddharth',
+        fullName: 'Siddharth R',
         des: 'Career Diplomat, UN | Adjunct Professor, MUJ',
         profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
     },
@@ -100,5 +100,17 @@ export const speakers = [
         fullName: 'Dr Aravind Chinchure',
         des: 'Founder & CEO, QLeap Academy, & Member of Board of Management at MUJ',
         profileimage: '/images/speakers/Aravind-Chinchure.jpeg',
+    },
+    {
+        id: 18,
+        fullName: 'Dr N D Mathur',
+        des: 'Dean at Jaipur School of Economics, JECRC University',
+        profileimage: '/images/speakers/N-D-Mathur.jpeg',
+    },
+    {
+        id: 19,
+        fullName: 'Dr Arun Shanbhag',
+        des: 'Dean FoE, Manipal University Jaipur',
+        profileimage: '/images/speakers/Arun-Shanbhag.jpeg',
     },
 ];
