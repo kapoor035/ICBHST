@@ -64,8 +64,8 @@ const Navbar = () => {
                                         <SheetDescription>
                                             <div className='flex flex-col justify-start items-start gap-8'>
                                                 {menu.map((item) => (
-                                                    <SheetClose asChild>
-                                                        <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                                                    <SheetClose asChild key={item.id}>
+                                                        <Link href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
                                                     </SheetClose>
                                                 ))}
                                             </div>
