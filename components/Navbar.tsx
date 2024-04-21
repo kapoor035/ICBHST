@@ -1,6 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTrigger,
+} from "@/components/ui/sheet"
+import { Menu } from 'lucide-react'
+
 
 const menu = [
     {
@@ -40,9 +49,27 @@ const Navbar = () => {
         <>
             <div className='w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white'>
                 <div className='w-full flex flex-wrap justify-between items-center border-b-2'>
-                    <Image className='w-48 lg:w-60 p-2' src={'/images/logo/muj-logo.svg'} alt="CirCon'24" width={250} height={50} />
+                    <Image className='w-44 sm:w-48 lg:w-60 p-2' src={'/images/logo/muj-logo.svg'} alt="CirCon'24" width={250} height={50} />
                     <Image className='hidden lg:block w-32 lg:w-36' src={'/images/logo/ministry-of-external-affairs-logo.png'} alt="Ministry Of External Affairs" width={150} height={50} />
-                    <Image className='w-28 lg:w-32' src={'/images/logo/viksit-bharat-logo.png'} alt="Viksit Bharat" width={150} height={50} />
+                    <div className='flex justify-center items-center gap-4'>
+                        <Image className='w-24 sm:w-28 lg:w-32' src={'/images/logo/viksit-bharat-logo.png'} alt="Viksit Bharat" width={150} height={50} />
+                        <div className='flex md:hidden'>
+                            <Sheet>
+                                <SheetTrigger><Menu className='w-8 h-8' /></SheetTrigger>
+                                <SheetContent>
+                                    <SheetHeader>
+                                        <SheetDescription>
+                                            <div className='flex flex-col justify-start items-start gap-8'>
+                                                {menu.map((item) => (
+                                                    <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                                                ))}
+                                            </div>
+                                        </SheetDescription>
+                                    </SheetHeader>
+                                </SheetContent>
+                            </Sheet>
+                        </div>
+                    </div>
                     <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} />
                     <Image className='hidden lg:block w-40 lg:w-48' src={'/images/logo/sdg-horizontal-logo.png'} alt="Sustainable Development Goals" width={250} height={50} />
                 </div>
