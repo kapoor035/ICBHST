@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <Speakers />
       {/* <Committee /> */}
-      {/* <Banners /> */}
+      <Banners />
     </main>
   );
 }

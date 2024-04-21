@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,6 +9,7 @@ import {
     SheetDescription,
     SheetHeader,
     SheetTrigger,
+    SheetClose,
 } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
 
@@ -47,7 +50,7 @@ const menu = [
 const Navbar = () => {
     return (
         <>
-            <div className='w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white'>
+            <div className='sticky top-0 z-20 md:relative w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white'>
                 <div className='w-full flex flex-wrap justify-between items-center border-b-2'>
                     <Image className='w-44 sm:w-48 lg:w-60 p-2' src={'/images/logo/muj-logo.svg'} alt="CirCon'24" width={250} height={50} />
                     <Image className='hidden lg:block w-32 lg:w-36' src={'/images/logo/ministry-of-external-affairs-logo.png'} alt="Ministry Of External Affairs" width={150} height={50} />
@@ -61,7 +64,9 @@ const Navbar = () => {
                                         <SheetDescription>
                                             <div className='flex flex-col justify-start items-start gap-8'>
                                                 {menu.map((item) => (
-                                                    <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                                                    <SheetClose asChild>
+                                                        <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                                                    </SheetClose>
                                                 ))}
                                             </div>
                                         </SheetDescription>
