@@ -25,8 +25,6 @@ const Committee = () => {
 
                     {/* Liaison officer Committee */}
                     <CommitteeTable data={committee.liaison} committeeName="Liaison officer" className="row-span-3" />
-                    
-                    
 
                     {/* Finance Committee */}
                     <CommitteeTable data={committee.finance} committeeName="Finance" />
@@ -36,8 +34,6 @@ const Committee = () => {
 
                     {/* Social Media/Photography Committee */}
                     <CommitteeTable data={committee.social} committeeName="Social Media/Photography" />
-
-                    
 
                     {/* Travel & Accomodation Committee */}
                     <CommitteeTable data={committee.travel} committeeName="Travel & Accomodation" />
@@ -54,12 +50,8 @@ const Committee = () => {
                     {/* Food Committee */}
                     <CommitteeTable data={committee.food} committeeName="Food" />
 
-                    
-
                     {/* Printing Committee */}
                     <CommitteeTable data={committee.printing} committeeName="Printing" />
-
-                    
 
                     {/* Souvenir Committee */}
                     <CommitteeTable data={committee.Souvenir} committeeName="Souvenir" />
