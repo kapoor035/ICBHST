@@ -1,10 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import { menu } from '@/components/constants'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-center gap-4 bg-black text-white text-center p-16'>
-      <div>
+    <footer className='flex flex-col justify-center md:items-center gap-4 bg-black text-white px-4 py-12 sm:px-8 md:px-16'>
+      <div className='flex flex-col md:flex-row items-start gap-2 md:gap-16 mb-4'>
+        {menu.map((item) => (
+          <Link key={item.id} href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-medium hover:underline transition-all'>{item.label}</Link>
+        ))}
+      </div>
+      <div className='flex items-center gap-4'>
+        <Image src={'/images/logo/muj-logo-icon.png'} alt="CirCon'24" width={50} height={50} />
         <Image src={'/images/logo/sdc-logo-white.png'} alt="CirCon'24" width={75} height={50} />
       </div>
       <div className=''>

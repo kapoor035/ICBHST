@@ -12,40 +12,7 @@ import {
     SheetClose,
 } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
-
-
-const menu = [
-    {
-        id: 1,
-        label: 'About',
-        link: '#Introduction',
-    },
-    {
-        id: 2,
-        label: 'Speakers',
-        link: '#Speakers',
-    },
-    {
-        id: 3,
-        label: 'Schedule',
-        link: '#',
-    },
-    {
-        id: 4,
-        label: 'Registration',
-        link: '#',
-    },
-    {
-        id: 5,
-        label: 'Committee',
-        link: '#',
-    },
-    {
-        id: 6,
-        label: 'Contact',
-        link: '#',
-    },
-]
+import { menu } from '@/components/constants'
 
 const Navbar = () => {
     return (
@@ -65,7 +32,7 @@ const Navbar = () => {
                                             <div className='flex flex-col justify-start items-start gap-8'>
                                                 {menu.map((item) => (
                                                     <SheetClose asChild key={item.id}>
-                                                        <Link href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                                                        <Link href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-semibold hover:underline transition-all'>{item.label}</Link>
                                                     </SheetClose>
                                                 ))}
                                             </div>
@@ -81,7 +48,7 @@ const Navbar = () => {
             </div>
             <div className='sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-start items-center gap-8 drop-shadow-xl'>
                 {menu.map((item) => (
-                    <Link key={item.id} href={item.link} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                    <Link key={item.id} href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-semibold hover:underline transition-all'>{item.label}</Link>
                 ))}
             </div>
         </>

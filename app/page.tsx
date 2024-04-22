@@ -3,7 +3,8 @@ import Banners from "@/components/Banners";
 import Hero from "@/components/Hero";
 import Speakers from "@/components/Speakers";
 import Committee from "@/components/Committee";
-import Image from "next/image";
+import Contact from "@/components/Contact";
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   return (
@@ -13,8 +14,10 @@ export default function Home() {
         <div className="relative z-10 -mt-80 md:-mt-32"><About /></div>
       </div>
       <Speakers />
-      {/* <Committee /> */}
+      {/* <Schedule /> */}
+      <Committee />
       <Banners />
+      <Contact />
     </main>
   );
 }
