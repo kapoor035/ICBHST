@@ -20,11 +20,13 @@ const Committee = () => {
                     {/* Technical Program Committee */}
                     <CommitteeTable data={committee.technical} committeeName="Technical Program" />
 
-                    {/* Stage Management Committee */}
-                    <CommitteeTable data={committee.stage} committeeName="Stage Management" />
+                    {/* Registration Committee */}
+                    <CommitteeTable data={committee.registration} committeeName="Registration" />
 
-                    {/* Local Organizing/Hospitality Committee */}
-                    <CommitteeTable data={committee.local} committeeName="Local Organizing/Hospitality" className="row-span-3" />
+                    {/* Liaison officer Committee */}
+                    <CommitteeTable data={committee.liaison} committeeName="Liaison officer" className="row-span-3" />
+                    
+                    
 
                     {/* Finance Committee */}
                     <CommitteeTable data={committee.finance} committeeName="Finance" />
@@ -35,23 +37,29 @@ const Committee = () => {
                     {/* Social Media/Photography Committee */}
                     <CommitteeTable data={committee.social} committeeName="Social Media/Photography" />
 
+                    
+
                     {/* Travel & Accomodation Committee */}
                     <CommitteeTable data={committee.travel} committeeName="Travel & Accomodation" />
 
                     {/* Print Media and Photography Committee */}
                     <CommitteeTable data={committee.print} committeeName="Print Media and Photography" />
 
+                    {/* Local Organizing/Hospitality Committee */}
+                    <CommitteeTable data={committee.local} committeeName="Local Organizing/Hospitality" />
+
+                    {/* Stage Management Committee */}
+                    <CommitteeTable data={committee.stage} committeeName="Stage Management" />
+
                     {/* Food Committee */}
                     <CommitteeTable data={committee.food} committeeName="Food" />
 
-                    {/* Registration Committee */}
-                    <CommitteeTable data={committee.registration} committeeName="Registration" />
+                    
 
                     {/* Printing Committee */}
                     <CommitteeTable data={committee.printing} committeeName="Printing" />
 
-                    {/* Liaison officer Committee */}
-                    <CommitteeTable data={committee.liaison} committeeName="Liaison officer" />
+                    
 
                     {/* Souvenir Committee */}
                     <CommitteeTable data={committee.Souvenir} committeeName="Souvenir" />

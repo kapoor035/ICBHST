@@ -213,13 +213,6 @@ export const committee = {
             picture: '/images/committee/Jayaram-ER.jpg',
         },
         {
-            id: 9,
-            name: 'Mr. Siddharth Rajhans',
-            des: 'Professor, CSE',
-            role: 'General Co-Chair',
-            picture: '/images/committee/Siddharth-Rajhans.jpg',
-        },
-        {
             id: 10,
             name: 'Dr. Sandeep Chaurasia',
             des: 'Director, SCSE',
@@ -232,6 +225,13 @@ export const committee = {
             des: 'Director, SCCE',
             role: 'Program Chair',
             picture: '/images/committee/VS-Dhaka.jpg',
+        },
+        {
+            id: 9,
+            name: 'Mr. Siddharth Rajhans',
+            des: 'Adjunct Faculty, CSE',
+            role: 'Organizer',
+            picture: '/images/committee/Siddharth-Rajhans.jpg',
         },
         {
             id: 12,
@@ -361,6 +361,11 @@ export const committee = {
             name: 'Ms. Sushama',
             dept: 'Department of CSE',
         },
+        {
+            id: 7,
+            name: 'Mr. Mayank Jain',
+            dept: 'Department of CSE',
+        },
     ],
     printing: [
         {
@@ -427,6 +432,11 @@ export const committee = {
         },
         {
             id: 6,
+            name: 'Dr Anil Kumar',
+            dept: 'Department of CSE',
+        },
+        {
+            id: 7,
             name: 'Dr Nishant Jain',
             dept: 'Department of CSE',
         },
@@ -456,33 +466,73 @@ export const committee = {
         },
         {
             id: 3,
-            name: 'Dr Yadvendra Pratap',
+            name: 'Dr Puneet Mittal',
             dept: 'Department of AIML',
         },
         {
             id: 4,
+            name: 'Dr Yadvendra Pratap',
+            dept: 'Department of AIML',
+        },
+        {
+            id: 5,
             name: 'Dr Arun Poonia',
             dept: 'FOA, Language',
         },
         {
-            id: 5,
+            id: 6,
             name: 'Dr Ajay Kumar',
             dept: 'Department of CSE',
         },
         {
-            id: 6,
+            id: 7,
             name: 'Dr Surendra Solanki',
             dept: 'Department of AIML',
         },
         {
-            id: 7,
-            name: 'Mr Siddharth Kumar',
+            id: 8,
+            name: 'Mr. Siddharth Kumar',
             dept: 'Department of AIML',
         },
         {
-            id: 8,
+            id: 9,
             name: 'Mr. Prashant Hemrajani',
             dept: 'Department of AIML',
+        },
+        {
+            id: 10,
+            name: 'Dr Akshay Jadav',
+            dept: 'Department of CSE',
+        },
+        {
+            id: 11,
+            name: 'Dr Saurabh Singh Verma',
+            dept: 'Department of CCE',
+        },
+        {
+            id: 12,
+            name: 'Ms. Sri Geetha M',
+            dept: 'Department of AIML',
+        },
+        {
+            id: 13,
+            name: 'Dr Shikha Mundra',
+            dept: 'Department of CSE',
+        },
+        {
+            id: 14,
+            name: 'Dr Abhay Sharma',
+            dept: 'Department of IoT',
+        },
+        {
+            id: 15,
+            name: 'Mr. Aditya Hathi',
+            dept: 'Department of CCE',
+        },
+        {
+            id: 16,
+            name: 'Ms. Babita Tiwari',
+            dept: 'Department of CSE',
         },
     ],
     print: [
@@ -549,13 +599,13 @@ export const committee = {
         },
         {
             id: 3,
-            name: 'Dr Akshay Jadav',
-            dept: 'Department of CSE',
+            name: 'Dr Anand Pandey',
+            dept: 'Department of Mechanical Engineering',
         },
         {
             id: 4,
-            name: 'Dr Anil Kumar',
-            dept: 'Department of CSE',
+            name: 'Dr Dalip Singh',
+            dept: 'Department of Mechanical Engineering',
         },
         {
             id: 5,
@@ -564,48 +614,23 @@ export const committee = {
         },
         {
             id: 6,
-            name: 'Dr Saurabh Singh Verma',
-            dept: 'Department of CCE',
-        },
-        {
-            id: 7,
-            name: 'Mr. Mayank Jain',
-            dept: 'Department of CSE',
-        },
-        {
-            id: 8,
             name: 'Dr Jayakishan V',
             dept: 'Department of CSE',
         },
         {
-            id: 9,
-            name: 'Ms. Sri Geetha M',
-            dept: 'Department of AIML',
-        },
-        {
-            id: 10,
+            id: 7,
             name: 'Mr. Sanjay Kumar Tehariya',
             dept: 'Department of AIML',
         },
         {
-            id: 11,
-            name: 'Dr Abhay Sharma',
-            dept: 'Department of IoT',
-        },
-        {
-            id: 12,
+            id: 8,
             name: 'Mr. Rohit Singh',
             dept: 'Department of IoT',
         },
         {
-            id: 13,
+            id: 9,
             name: 'Ms. Nandini Babbar',
             dept: 'Department of IoT',
-        },
-        {
-            id: 14,
-            name: 'Mr. Aditya Hathi',
-            dept: 'Department of CCE',
         },
     ],
     cultural: [
