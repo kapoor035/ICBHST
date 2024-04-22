@@ -11,18 +11,18 @@ export const menu = [
         link: '#Speakers',
         newTab: false,
     },
-    {
-        id: 3,
-        label: 'Schedule',
-        link: '#Schedule',
-        newTab: false,
-    },
     // {
-    //     id: 4,
-    //     label: 'Registration',
-    //     link: 'https://docs.google.com/forms/d/e/1FAIpQLScQRnBpTz42KXMjQuzXzevxHTA-1oFHFi5caRfs4sB9-a6_dg/viewform',
-    //     newTab: true,
+    //     id: 3,
+    //     label: 'Schedule',
+    //     link: '#Schedule',
+    //     newTab: false,
     // },
+    {
+        id: 4,
+        label: 'Registration',
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLScQRnBpTz42KXMjQuzXzevxHTA-1oFHFi5caRfs4sB9-a6_dg/viewform',
+        newTab: true,
+    },
     {
         id: 5,
         label: 'Committee',
