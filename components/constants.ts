@@ -255,18 +255,18 @@ export const committee = {
             picture: '/images/committee/Mahesh-Jangid.jpg',
         },
         {
-            id: 15,
-            name: 'Dr. Sakshi Shringi',
-            des: 'Assistant Professor, CSE',
-            role: 'Convener',
-            picture: '/images/committee/Sakshi-Shringi.jpg',
-        },
-        {
             id: 16,
             name: 'Dr. Shishir Singh Chauhan',
             des: 'Assistant Professor, CSE',
             role: 'Convener',
             picture: '/images/committee/SHISHIR-SINGH.jpg',
+        },
+        {
+            id: 15,
+            name: 'Dr. Sakshi Shringi',
+            des: 'Assistant Professor, CSE',
+            role: 'Convener',
+            picture: '/images/committee/Sakshi-Shringi.jpg',
         },
     ],
     technical: [

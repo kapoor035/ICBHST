@@ -124,7 +124,7 @@ const About = () => {
 
   return (
     <div className='overflow-hidden' id='Introduction'>
-      <div className='bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 md:pb-16 flex flex-col justify-center items-center gap-4'>
+      <div className='bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16 flex flex-col justify-center items-center gap-4'>
         <motion.div className='flex' {...slidingAnimation}>
           {Array.from({ length: sdgoals.length * 30 }).map((_, i) => {
             const image = imagesGenerator.next().value;

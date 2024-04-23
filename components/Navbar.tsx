@@ -14,6 +14,8 @@ import {
 import { Menu } from 'lucide-react'
 import { menu } from '@/components/constants'
 
+const liveLink = 'https://youtube.com/live/jQriDJ5lH6I?feature=share'
+
 const Navbar = () => {
     return (
         <>
@@ -46,10 +48,17 @@ const Navbar = () => {
                     <Image className='hidden lg:block w-40 lg:w-48' src={'/images/logo/sdg-horizontal-logo.png'} alt="Sustainable Development Goals" width={250} height={50} />
                 </div>
             </div>
-            <div className='sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-start items-center gap-8 drop-shadow-xl'>
-                {menu.map((item) => (
-                    <Link key={item.id} href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-semibold hover:underline transition-all'>{item.label}</Link>
-                ))}
+            <div className='sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-between items-center gap-8 drop-shadow-xl'>
+                <div className='flex justify-center items-center gap-8'>
+                    {menu.map((item) => (
+                        <Link key={item.id} href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-semibold hover:underline transition-all'>{item.label}</Link>
+                    ))}
+                </div>
+                <div>
+                    <Link href={liveLink} target='_blank'>
+                        <Image src={'/images/graphics/yt-live-icon.jpg'} alt="YouTube Live" width={75} height={50} />
+                    </Link>
+                </div>
             </div>
         </>
     )
