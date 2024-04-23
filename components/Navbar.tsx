@@ -14,7 +14,17 @@ import {
 import { Menu } from 'lucide-react'
 import { menu } from '@/components/constants'
 
-const liveLink = 'https://youtube.com/live/jQriDJ5lH6I?feature=share'
+let liveLink: string;
+
+const date = new Date()
+const day = date.getDate()
+// console.log(day)
+const month = date.getMonth() + 1
+// console.log(month)
+const year = date.getFullYear()
+// console.log(year)
+if (day < 27 && month === 4 && year === 2024) liveLink = 'https://youtube.com/live/jQriDJ5lH6I?feature=share'
+else liveLink = 'https://youtube.com/live/atdguUds3wc?feature=share'
 
 const Navbar = () => {
     return (
@@ -30,13 +40,18 @@ const Navbar = () => {
                                 <SheetTrigger><Menu className='w-8 h-8' /></SheetTrigger>
                                 <SheetContent>
                                     <SheetHeader>
-                                        <SheetDescription>
+                                        <SheetDescription className='flex flex-col justify-start items-start gap-8'>
                                             <div className='flex flex-col justify-start items-start gap-8'>
                                                 {menu.map((item) => (
                                                     <SheetClose asChild key={item.id}>
                                                         <Link href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-semibold hover:underline transition-all'>{item.label}</Link>
                                                     </SheetClose>
                                                 ))}
+                                            </div>
+                                            <div>
+                                                <Link href={liveLink} target='_blank'>
+                                                    <Image src={'/images/graphics/yt-live-icon.jpg'} alt="YouTube Live" width={75} height={50} />
+                                                </Link>
                                             </div>
                                         </SheetDescription>
                                     </SheetHeader>
