@@ -14,7 +14,7 @@ export default function Home() {
         <div className="relative z-10 -mt-80 md:-mt-32"><About /></div>
       </div>
       <Speakers />
-      {/* <Schedule /> */}
+      <Schedule />
       <Committee />
       <Banners />
       <Contact />
