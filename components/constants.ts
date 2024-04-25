@@ -11,12 +11,12 @@ export const menu = [
         link: '#Speakers',
         newTab: false,
     },
-    // {
-    //     id: 3,
-    //     label: 'Schedule',
-    //     link: '#Schedule',
-    //     newTab: false,
-    // },
+    {
+        id: 3,
+        label: 'Schedule',
+        link: '#Schedule',
+        newTab: false,
+    },
     {
         id: 4,
         label: 'Registration',
