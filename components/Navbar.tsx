@@ -14,17 +14,7 @@ import {
 import { Menu } from 'lucide-react'
 import { menu } from '@/components/constants'
 
-let liveLink: string;
-
-const date = new Date()
-const day = date.getDate()
-// console.log(day)
-const month = date.getMonth() + 1
-// console.log(month)
-const year = date.getFullYear()
-// console.log(year)
-if (day < 27 && month === 4 && year === 2024) liveLink = 'https://youtube.com/live/jQriDJ5lH6I?feature=share'
-else liveLink = 'https://youtube.com/live/atdguUds3wc?feature=share'
+let liveLink = 'https://youtube.com/live/atdguUds3wc?feature=share'
 
 const Navbar = () => {
     return (
