@@ -16,7 +16,7 @@ export default function Home() {
       <Speakers />
       <Schedule />
       <Committee />
-      <Banners />
+      {/* <Banners /> */}
       <Contact />
     </main>
   );

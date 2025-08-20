@@ -48,16 +48,16 @@ const Committee = () => {
                     <CommitteeTable data={committee.stage} committeeName="Stage Management" />
 
                     {/* Food Committee */}
-                    <CommitteeTable data={committee.food} committeeName="Food" />
+                    {/* <CommitteeTable data={committee.food} committeeName="Food" /> */}
 
                     {/* Printing Committee */}
-                    <CommitteeTable data={committee.printing} committeeName="Printing" />
+                    {/* <CommitteeTable data={committee.printing} committeeName="Printing" /> */}
 
                     {/* Souvenir Committee */}
-                    <CommitteeTable data={committee.Souvenir} committeeName="Souvenir" />
+                    {/* <CommitteeTable data={committee.Souvenir} committeeName="Souvenir" /> */}
 
                     {/* Cultural Committee */}
-                    <CommitteeTable data={committee.cultural} committeeName="Cultural" />
+                    {/* <CommitteeTable data={committee.cultural} committeeName="Cultural" /> */}
 
                 </div>
             </div>

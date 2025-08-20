@@ -146,12 +146,12 @@ export const speakers = [
         des: 'Dean at Jaipur School of Economics, JECRC University',
         profileimage: '/images/speakers/N-D-Mathur.jpeg',
     },
-    {
-        id: 19,
-        fullName: 'Dr Arun Shanbhag',
-        des: 'Dean FoE, Manipal University Jaipur',
-        profileimage: '/images/speakers/Arun-Shanbhag.jpeg',
-    },
+    // {
+    //     id: 19,
+    //     fullName: 'Dr Arun Shanbhag',
+    //     des: 'Dean FoE, Manipal University Jaipur',
+    //     profileimage: '/images/speakers/Arun-Shanbhag.jpeg',
+    // },
 ];
 
 export const committee = {
@@ -184,13 +184,13 @@ export const committee = {
             role: 'Co-Patron',
             picture: '/images/committee/Nitu-Bhatnagar.jpg',
         },
-        {
-            id: 5,
-            name: 'Dr. Arun Shanbhag',
-            des: 'Dean, FoE',
-            role: 'General Chair',
-            picture: '/images/committee/Arun-Shanbhag.jpg',
-        },
+        // {
+        //     id: 5,
+        //     name: 'Dr. Arun Shanbhag',
+        //     des: 'Dean, FoE',
+        //     role: 'General Chair',
+        //     picture: '/images/committee/Arun-Shanbhag.jpg',
+        // },
         {
             id: 6,
             name: 'Dr. Brajesh Kumar',
