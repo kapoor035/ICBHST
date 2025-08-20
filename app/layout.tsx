@@ -11,8 +11,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "International Conclave on Circular Economy",
-  description: "Challenges & Opportunities in Sustainability and Human Development.",
+  title: "TrustNet 2026",
+  description: "Advancing Trusted Networks and Intelligent Systems for a Secure, Ethical, and Inclusive Digital Future.",
 };
 
 export default function RootLayout({
