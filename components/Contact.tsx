@@ -8,10 +8,10 @@ const Contact = () => {
                 <h2 className='text-xl sm:text-2xl md:text-3xl font-black uppercase'>Contact</h2>
                 <div className='flex flex-col md:flex-row justify-center items-start gap-12 md:gap-24 lg:gap-32'>
                     <div className='flex flex-col gap-3 border-l-2 pl-4'>
-                        <h3 className='font-bold text-lg sm:text-xl md:text-2xl'>Dr Sakshi Shringi <span className='text-sm font-normal'>(Convener)</span></h3>
+                        <h3 className='font-bold text-lg sm:text-xl md:text-2xl'>Dr Amit Garg <span className='text-sm font-normal'>(Convener)</span></h3>
                         <div className='flex flex-col justify-center items-start gap-2'>
-                            <a href='tel:+91-9649832226' className='flex justify-center items-center gap-2 text-sm sm:text-base'><Phone className='w-4 h-4 sm:w-6 sm:h-6' />+91-9649832226</a>
-                            <a href='mailto:sakshi.shringi@jaipur.manipal.edu' className='flex justify-center items-center gap-2 text-sm sm:text-base'><Mail className='w-4 h-4 sm:w-6 sm:h-6' />sakshi.shringi@jaipur.manipal.edu</a>
+                            <a href='tel:+91-9649832226' className='flex justify-center items-center gap-2 text-sm sm:text-base'><Phone className='w-4 h-4 sm:w-6 sm:h-6' />+91-9897260563</a>
+                            <a href='mailto:sakshi.shringi@jaipur.manipal.edu' className='flex justify-center items-center gap-2 text-sm sm:text-base'><Mail className='w-4 h-4 sm:w-6 sm:h-6' />amit.garg@jaipur.manipal.edu</a>
                         </div>
                     </div>
                     <div className='flex flex-col gap-3 border-l-2 pl-4'>
