@@ -29,6 +29,14 @@ const Hero = () => {
             height={512}
           />
         </div>
+        <div className="flex gap-4 mt-2">
+          <button className="px-6 py-3 bg-secondaryBg text-white font-bold rounded-full hover:bg-opacity-90 transition-all">
+            Register Now
+          </button>
+          <button className="px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-opacity-90 transition-all">
+            Submit Paper
+          </button>
+        </div>
       </div>
     </div>
   );
