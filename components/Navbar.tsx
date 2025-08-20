@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import {
   Sheet,
   SheetContent,
@@ -15,6 +16,29 @@ import { Menu } from "lucide-react";
 import { menu } from "@/components/constants";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavigation = (link: string) => {
+    const isAnchorLink = link.startsWith("/#");
+
+    if (isAnchorLink) {
+      const elementId = link.split("#")[1];
+      if (pathname === "/") {
+        // If on homepage, scroll directly
+        const element = document.getElementById(elementId);
+        element?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // If on another page, navigate to homepage with anchor
+        router.push(link);
+      }
+    } else {
+      router.push(link);
+    }
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div className="sticky top-0 z-20 md:relative w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white">
@@ -40,23 +64,22 @@ const Navbar = () => {
                       <div className="flex flex-col justify-start items-start gap-8">
                         {menu.map((item) => (
                           <SheetClose asChild key={item.id}>
-                            <Link
-                              href={item.link}
-                              target={item.newTab ? "_blank" : "_self"}
+                            <button
+                              onClick={() => handleNavigation(item.link)}
                               className="font-semibold hover:underline transition-all"
                             >
                               {item.label}
-                            </Link>
+                            </button>
                           </SheetClose>
                         ))}
                       </div>
                       <div>
-                        <Link
-                          href="#register"
+                        <button
+                          onClick={() => handleNavigation("/#register")}
                           className="px-6 py-2 bg-secondaryBg text-white rounded-full font-semibold hover:opacity-90 transition-all"
                         >
                           Register
-                        </Link>
+                        </button>
                       </div>
                     </SheetDescription>
                   </SheetHeader>
@@ -77,23 +100,22 @@ const Navbar = () => {
       <div className="sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-between items-center gap-8 drop-shadow-xl">
         <div className="flex justify-center items-center gap-8">
           {menu.map((item) => (
-            <Link
+            <button
               key={item.id}
-              href={item.link}
-              target={item.newTab ? "_blank" : "_self"}
+              onClick={() => handleNavigation(item.link)}
               className="font-semibold hover:underline transition-all"
             >
               {item.label}
-            </Link>
+            </button>
           ))}
         </div>
         <div>
-          <Link
-            href="#register"
+          <button
+            onClick={() => handleNavigation("/#register")}
             className="px-6 py-2 bg-secondaryBg text-white rounded-full font-semibold hover:opacity-90 transition-all"
           >
             Register
-          </Link>
+          </button>
         </div>
       </div>
     </>

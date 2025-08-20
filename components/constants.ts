@@ -2,37 +2,37 @@ export const menu = [
     {
         id: 1,
         label: 'About',
-        link: '#Introduction',
+        link: '/#Introduction',
+        newTab: false,
+    },
+    {
+        id: 4,
+        label: 'Call for Papers',
+        link: '/call-for-papers',
         newTab: false,
     },
     {
         id: 2,
         label: 'Speakers',
-        link: '#Speakers',
+        link: '/#Speakers',
         newTab: false,
     },
     {
         id: 3,
         label: 'Schedule',
-        link: '#Schedule',
+        link: '/#Schedule',
         newTab: false,
     },
-    // {
-    //     id: 4,
-    //     label: 'Registration',
-    //     link: 'https://docs.google.com/forms/d/e/1FAIpQLScQRnBpTz42KXMjQuzXzevxHTA-1oFHFi5caRfs4sB9-a6_dg/viewform',
-    //     newTab: true,
-    // },
     {
         id: 5,
         label: 'Committee',
-        link: '#Committee',
+        link: '/#Committee',
         newTab: false,
     },
     {
         id: 6,
         label: 'Contact',
-        link: '#Contact',
+        link: '/#Contact',
         newTab: false,
     },
 ]

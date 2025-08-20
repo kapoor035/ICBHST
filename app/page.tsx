@@ -5,6 +5,7 @@ import Speakers from "@/components/Speakers";
 import Committee from "@/components/Committee";
 import Contact from "@/components/Contact";
 import Schedule from "@/components/Schedule";
+import CallForPapers from "@/components/CallForPapers";
 
 export default function Home() {
   return (

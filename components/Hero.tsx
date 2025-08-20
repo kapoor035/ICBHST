@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Belanosima } from "next/font/google";
+import { useRouter } from "next/navigation";
 
 const belanosima = Belanosima({
   subsets: ["latin"],
@@ -8,6 +10,8 @@ const belanosima = Belanosima({
 });
 
 const Hero = () => {
+  const router = useRouter();
+
   return (
     <div className="relative overflow-hidden h-[90vh]">
       <Image
@@ -33,7 +37,10 @@ const Hero = () => {
           <button className="px-6 py-3 bg-secondaryBg text-white font-bold rounded-full hover:bg-opacity-90 transition-all">
             Register Now
           </button>
-          <button className="px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-opacity-90 transition-all">
+          <button
+            onClick={() => router.push("/call-for-papers")}
+            className="px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-opacity-90 transition-all"
+          >
             Submit Paper
           </button>
         </div>
