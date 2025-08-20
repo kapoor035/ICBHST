@@ -20,9 +20,9 @@ const Footer = () => {
 
   return (
     <footer className='flex flex-col justify-center md:items-center gap-4 bg-black text-white px-4 py-8 sm:px-8 md:px-16'>
-      <div className='flex justify-start items-center gap-4 mb-4'>
+      {/* <div className='flex justify-start items-center gap-4 mb-4'>
         <p className='text-sm font-semibold'>Total Visitors: <span className='p-1 border-white'>{totalVisitors}</span></p>
-      </div>
+      </div> */}
       <div className='flex flex-col md:flex-row items-start gap-2 md:gap-16 mb-4'>
         {menu.map((item) => (
           <Link key={item.id} href={item.link} target={item.newTab ? '_blank' : '_self'} className='font-medium hover:underline transition-all'>{item.label}</Link>
