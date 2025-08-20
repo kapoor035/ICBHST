@@ -93,9 +93,9 @@ const sdgoals = [
   }
 ]
 
-const aboutText = "As we embark on the concepts of Viksit Bharat 2047 as put forward by the Honorable Prime Minister, Mr Narendra Modi, we owe the next generation of citizens a sustaining, economy that aligns with a healthy climate and compassionate human development. We are proposing multiple panels with speakers representing diverse industry, political and academic viewpoints. At the end of the conclave, the Conveners will develop a Consensus Document, which will be submitted to Niti Aayog and Published as an Editorial in Journal."
+const aboutText = "TrustNet will serve as a global platform for distinguished thought leaders from academia, industry, and policy to engage in meaningful dialogue on the future of trusted digital ecosystems. Through a series of keynote sessions, expert panels, and collaborative discussions, participants will critically examine the most pressing challenges and emerging opportunities in secure networks and intelligent systems. These deliberations will not only generate actionable insights but also foster cross-sector collaboration. The outcomes will be consolidated into a Consensus Document by the Conveners, capturing the collective vision and recommendations, which will be shared with leading national and international institutions and disseminated through reputed academic and policy publications."
 
-const introText = "Current economic models have long relied on production and consumption, while inputs like generated waste, environmental and resource sustainability, and human resource development have been less emphasized. With the circular economy, we have an imperative to minimize material waste, reuse materials, promote resource and energy efficiency, and develop a regenerative economic model. All the while recognizing the importance of human development.  In this Conclave, we will bring together important thought leaders from different domains to share and deliberate how we can drive transformation towards a sustainable, equitable and circular economic future."
+const introText = "The rapid advancement of digital technologies has transformed how societies, economies, and governments function. Yet, challenges around trust, security, privacy, and ethical use of intelligent systems remain pressing. With TrustNet 2026 – the International Conference on Trusted Networks and Intelligent Systems – we seek to explore how to build resilient, transparent, and human-centric digital infrastructures. The focus will be on advancing secure communication frameworks, data protection, ethical AI, and trust-enabled networks that align technological progress with societal well-being."
 
 function* infiniteImages(images: string | any[]) {
   let index = 0;
@@ -143,7 +143,7 @@ const About = () => {
         </div>
       </div>
       <div className='px-4 sm:px-8 md:px-16 py-12 md:p-16 text-center text-white bg-secondaryBg flex flex-col justify-center items-center gap-4'>
-        <h2 className='text-xl sm:text-2xl md:text-3xl font-black'>About the Conclave</h2>
+        <h2 className='text-xl sm:text-2xl md:text-3xl font-black'>About the Conference</h2>
         <p className='text-base md:text-lg font-normal text-justify'>{aboutText}</p>
       </div>
     </div>
