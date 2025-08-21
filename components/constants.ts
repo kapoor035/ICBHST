@@ -53,7 +53,8 @@ export const menu = [
             {
                 id: 'submission',
                 label: 'Paper Submission',
-                link: '/paper-submission',
+                link: 'https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIC2025',
+                newTab: true,
             },
             {
                 id: 'registration',

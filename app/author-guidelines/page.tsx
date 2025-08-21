@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AuthorGuidelines = () => {
   return (
@@ -6,10 +7,12 @@ const AuthorGuidelines = () => {
       {/* Hero Section */}
       <div className="relative h-[300px] mb-6">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/graphics/advisory-hero.jpg"
             alt="Author Guidelines"
-            className="w-full h-full object-cover"
+            className="object-cover"
+            fill
+            priority
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
@@ -50,7 +53,7 @@ const AuthorGuidelines = () => {
           </h2>
           <p className="mb-6">
             All submissions for TrustNet will be managed through emails. By
-            submitting, the authors agree to TrustNet 2026's policies. Each
+            submitting, the authors agree to TrustNet 2026&apos;s policies. Each
             submission will receive a unique paper ID, which should be used in
             all communications. Kindly remember the paper ID and quote that ID
             in all further communications in the subject line when you email us
