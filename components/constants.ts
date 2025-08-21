@@ -41,6 +41,33 @@ export const menu = [
         ],
     },
     {
+        id: 5,
+        label: 'For Authors',
+        link: '#',
+        dropdownItems: [
+            {
+                id: 'guidelines',
+                label: 'Guidelines for Authors',
+                link: '/author-guidelines',
+            },
+            {
+                id: 'submission',
+                label: 'Paper Submission',
+                link: '/paper-submission',
+            },
+            {
+                id: 'registration',
+                label: 'Registration',
+                link: '/registration',
+            },
+            {
+                id: 'brochure',
+                label: 'Conference Brochure',
+                link: '/conference-brochure',
+            },
+        ],
+    },
+    {
         id: 6,
         label: 'Contact',
         link: '/#Contact',
