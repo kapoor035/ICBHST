@@ -274,7 +274,7 @@ const Tracks = () => {
           <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="px-6 py-2 bg-secondaryBg text-white rounded-lg hover:opacity-90 transition-opacity"
+              className="px-6 py-3 bg-secondaryBg text-white rounded-full font-bold text-lg hover:opacity-90 transition-all duration-300 hover:scale-105"
             >
               {showAll ? "View Less" : "View More"}
             </button>
