@@ -18,22 +18,22 @@ const Committee = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-start gap-8'>
 
                     {/* Technical Program Committee */}
-                    <CommitteeTable data={committee.technical} committeeName="Technical Program" />
+                    {/* <CommitteeTable data={committee.technical} committeeName="Technical Program" /> */}
 
                     {/* Registration Committee */}
-                    <CommitteeTable data={committee.registration} committeeName="Registration" />
+                    {/* <CommitteeTable data={committee.registration} committeeName="Registration" /> */}
 
                     {/* Liaison officer Committee */}
-                    <CommitteeTable data={committee.liaison} committeeName="Liaison officer" className="row-span-3" />
+                    {/* <CommitteeTable data={committee.liaison} committeeName="Liaison officer" className="row-span-3" /> */}
 
                     {/* Finance Committee */}
-                    <CommitteeTable data={committee.finance} committeeName="Finance" />
+                    {/* <CommitteeTable data={committee.finance} committeeName="Finance" /> */}
 
                     {/* Web Page Committee */}
-                    <CommitteeTable data={committee.web} committeeName="Web Page" />
+                    {/* <CommitteeTable data={committee.web} committeeName="Web Page" /> */}
 
                     {/* Social Media/Photography Committee */}
-                    <CommitteeTable data={committee.social} committeeName="Social Media/Photography" />
+                    {/* <CommitteeTable data={committee.social} committeeName="Social Media/Photography" /> */}
 
                     {/* Travel & Accomodation Committee */}
                     {/* <CommitteeTable data={committee.travel} committeeName="Travel & Accomodation" /> */}
