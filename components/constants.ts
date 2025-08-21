@@ -17,12 +17,12 @@ export const menu = [
         link: '/#Speakers',
         newTab: false,
     },
-    {
-        id: 3,
-        label: 'Schedule',
-        link: '/#Schedule',
-        newTab: false,
-    },
+    // {
+    //     id: 3,
+    //     label: 'Schedule',
+    //     link: '/#Schedule',
+    //     newTab: false,
+    // },
     {
         id: 5,
         label: 'Committee',
