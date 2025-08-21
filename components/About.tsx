@@ -144,7 +144,7 @@ const About = () => {
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-start items-center md:items-start gap-8">
             {/* Left side: Title */}
             <div className="flex-shrink-0 md:pl-0 md:mb-0 w-full md:w-auto text-center md:text-left">
-              <div className="rounded-full bg-orange-500 px-8 py-3 text-white font-semibold text-lg shadow-md inline-block">
+              <div className="rounded-full bg-secondaryBg px-8 py-3 text-white font-semibold text-lg shadow-md inline-block">
                 Important Dates
               </div>
             </div>
