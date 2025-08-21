@@ -29,7 +29,7 @@ const AuthorGuidelines = () => {
           <p className="mb-6">
             The International Conference on Trusted Networks and Intelligent
             Systems (TrustNet 2026) seeks original research contributions across
-            various disciplines, provided the work's context is adequately
+            various disciplines, provided the work&apos;s context is adequately
             articulated. Researchers are encouraged to submit their papers by
             the specified deadline. After this date, no new papers will be
             accepted for submission, although modifications to existing
