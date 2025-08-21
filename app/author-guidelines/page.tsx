@@ -62,8 +62,8 @@ const AuthorGuidelines = () => {
 
           <h3 className="text-2xl font-bold mb-3">Article Types</h3>
           <p className="mb-6">
-            Articles with novel research contributions on the conference's theme
-            should be submitted to TrustNet 2026.
+            Articles with novel research contributions on the conference&apos;s
+            theme should be submitted to TrustNet 2026.
           </p>
 
           <h3 className="text-2xl font-bold mb-3">Language Style</h3>
