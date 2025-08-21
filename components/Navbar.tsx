@@ -12,7 +12,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { menu } from "@/components/constants";
 
 const Navbar = () => {
@@ -100,13 +100,32 @@ const Navbar = () => {
       <div className="sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-between items-center gap-8 drop-shadow-xl">
         <div className="flex justify-center items-center gap-8">
           {menu.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavigation(item.link)}
-              className="font-semibold hover:underline transition-all"
-            >
-              {item.label}
-            </button>
+            <div key={item.id} className="relative group">
+              <button
+                onClick={() =>
+                  !item.dropdownItems && handleNavigation(item.link)
+                }
+                className="font-semibold hover:underline transition-all flex items-center gap-1"
+              >
+                {item.label}
+                {item.dropdownItems && <ChevronDown className="w-4 h-4" />}
+              </button>
+              {item.dropdownItems && (
+                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-48 bg-white border rounded-md shadow-lg transition-all duration-200">
+                  <div className="py-1">
+                    {item.dropdownItems.map((dropdownItem) => (
+                      <button
+                        key={dropdownItem.id}
+                        onClick={() => handleNavigation(dropdownItem.link)}
+                        className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold"
+                      >
+                        {dropdownItem.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
         <div>

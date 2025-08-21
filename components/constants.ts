@@ -24,10 +24,21 @@ export const menu = [
     //     newTab: false,
     // },
     {
-        id: 5,
+        id: 4,
         label: 'Committee',
-        link: '/#Committee',
-        newTab: false,
+        link: '#',
+        dropdownItems: [
+            {
+                id: 'advisory',
+                label: 'Advisory Board',
+                link: '/advisory-board',
+            },
+            {
+                id: 'organizing',
+                label: 'Organizing Committee',
+                link: '/organizing-committee',
+            },
+        ],
     },
     {
         id: 6,

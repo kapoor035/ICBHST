@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <Speakers />
       {/* <Schedule /> */}
-      <Committee />
+      {/* <Committee /> */}
       {/* <Banners /> */}
       <Contact />
     </main>
