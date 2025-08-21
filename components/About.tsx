@@ -132,7 +132,7 @@ const About = () => {
           })}
         </motion.div>
         <div className='w-full h-full flex justify-center items-center'>
-          <Image className='' src={'/images/graphics/about-banner1.png'} alt="about-banner" width={1000} height={1000} />
+          <Image className='' src={'/images/graphics/about-banner.png'} alt="about-banner" width={1000} height={1000} />
         </div>
         <div className='flex flex-col gap-4'>
           {/* <div className='flex gap-2'>
