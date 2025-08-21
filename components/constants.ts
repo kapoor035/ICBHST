@@ -64,7 +64,7 @@ export const menu = [
             {
                 id: 'brochure',
                 label: 'Conference Brochure',
-                link: '/conference-brochure',
+                link: '/#', // todo
             },
         ],
     },
