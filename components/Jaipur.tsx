@@ -10,10 +10,13 @@ const Jaipur = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-8">About Jaipur</h2>
-        <div className="max-w-5xl mx-auto text-center mb-12">
+        <h2 className="text-5xl font-bold text-center mb-8 relative pb-6">
+          About Jaipur
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-gray-300 rounded-full"></div>
+        </h2>
+        <div className="max-w-5xl mx-auto text-center mb-8">
           <p className="text-gray-600 text-justify mb-6 text-lg">
             Jaipur, famously known as the Pink City, is the vibrant capital of
             Rajasthan and a remarkable testament to Indian architecture and
