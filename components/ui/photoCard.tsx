@@ -1,14 +1,39 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
+import { Linkedin } from "lucide-react";
 
-const PhotoCard = ({profileimage, fullName, des}: {profileimage: string, fullName: string, des: string}) => {
-    return (
-        <div className='py-2 md:py-16 flex flex-col justify-center items-center'>
-            <Image className='w-48 h-48 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 object-cover rounded-full border-[6px] border-secondaryBg' src={profileimage} alt='Image' width={256} height={256} priority />
-            <h3 className='text-xl md:text-2xl lg:text-3xl font-semibold mt-8'>{fullName}</h3>
-            <p className='text-base lg:text-lg mt-2'>{des}</p>
-        </div>
-    )
+interface PhotoCardProps {
+  profileimage: string;
+  fullName: string;
+  des: string;
 }
 
-export default PhotoCard
+const PhotoCard = ({ profileimage, fullName, des }: PhotoCardProps) => {
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg border-2 border-secondaryBg">
+        <Image
+          src={profileimage}
+          alt={fullName}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <div className="flex items-center gap-2">
+        <h3 className="font-semibold text-lg">{fullName}</h3>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-6 h-6 bg-black rounded-sm flex items-center justify-center hover:bg-secondaryBg transition-colors duration-200"
+        >
+          <Linkedin size={12} className="text-white" />
+        </a>
+      </div>
+      <p className="text-gray-700 text-sm">{des}</p>
+    </div>
+  );
+};
+
+export default PhotoCard;

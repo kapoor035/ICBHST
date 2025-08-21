@@ -151,12 +151,12 @@ export const speakers = [
         des: 'Founder & CEO, QLeap Academy, & Member of Board of Management at MUJ',
         profileimage: '/images/speakers/Aravind-Chinchure.jpeg',
     },
-    {
-        id: 18,
-        fullName: 'Dr N D Mathur',
-        des: 'Dean at Jaipur School of Economics, JECRC University',
-        profileimage: '/images/speakers/N-D-Mathur.jpeg',
-    },
+    // {
+    //     id: 18,
+    //     fullName: 'Dr N D Mathur',
+    //     des: 'Dean at Jaipur School of Economics, JECRC University',
+    //     profileimage: '/images/speakers/N-D-Mathur.jpeg',
+    // },
     // {
     //     id: 19,
     //     fullName: 'Dr Arun Shanbhag',
