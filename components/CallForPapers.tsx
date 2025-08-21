@@ -2,6 +2,120 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaShieldAlt,
+  FaServer,
+  FaUserShield,
+  FaBrain,
+  FaMobileAlt,
+  FaClipboardCheck,
+  FaUserLock,
+  FaEllipsisH,
+} from "react-icons/fa";
+
+const getIconForTrack = (index: number) => {
+  const icons = [
+    FaShieldAlt,
+    FaServer,
+    FaUserShield,
+    FaBrain,
+    FaMobileAlt,
+    FaClipboardCheck,
+    FaUserLock,
+    FaEllipsisH,
+  ];
+  const Icon = icons[index] || FaEllipsisH;
+  return <Icon className="w-6 h-6 text-orange-500" />;
+};
+
+const tracksData = [
+  {
+    title: "AREA 1: APPLIED CRYPTOGRAPHY AND NETWORK SECURITY",
+    topics: [
+      "Information Hiding",
+      "Intrusion Detection & Prevention",
+      "Network Security",
+      "Privacy Enhancing Cryptography",
+      "Security Protocols",
+      "Sensor and Mobile Ad Hoc Network Security",
+      "Wireless Network Security",
+    ],
+  },
+  {
+    title: "AREA 2: DISTRIBUTED SYSTEMS AND ARCHITECTURES",
+    topics: [
+      "Blockchain security",
+      "Critical Infrastructure Protection",
+      "Peer-to-Peer Security",
+      "Security in Distributed Systems",
+      "Security Information Systems Architecture",
+    ],
+  },
+  {
+    title: "AREA 3: DATA SECURITY AND PRIVACY",
+    topics: [
+      "Access Control",
+      "Anonymity",
+      "Biometrics Security and Privacy",
+      "Database Security and Privacy",
+      "Data Integrity",
+      "Ethical and Legal Implications of Security and Privacy",
+      "Identity Management",
+      "Personal Data Protection for Information Systems",
+      "Privacy Enhancing Technologies",
+      "Security and Privacy Policies",
+    ],
+  },
+  {
+    title: "AREA 4: SECURITY AND AI/MACHINE LEARNING",
+    topics: [
+      "Adversarial Machine Learning",
+      "AI-based Solutions for Security",
+      "Attacks on Machine Learning",
+      "Secure Federated Learning",
+      "Security Vulnerabilities of Large Language Models",
+    ],
+  },
+  {
+    title: "AREA 5: SECURITY AND PRIVACY IN EMERGING SCENARIOS",
+    topics: [
+      "Security and Privacy for Big Data",
+      "Security and Privacy in Crowdsourcing",
+      "Security and Privacy in IT Outsourcing",
+      "Security and Privacy in Location-Based Services",
+      "Security and Privacy in Mobile Systems",
+      "Security and Privacy in Pervasive/Ubiquitous Computing",
+      "Security and Privacy in Smart Grids",
+      "Security and Privacy in Social Networks",
+      "Security and Privacy in the Cloud",
+    ],
+  },
+  {
+    title: "AREA 6: RISKS, POLICIES AND SOFTWARE SECURITY",
+    topics: [
+      "Formal Methods and Security",
+      "Information Systems Auditing",
+      "Intellectual Property Protection",
+      "Insider Threats and Countermeasures",
+      "Organizational Security Policies",
+      "Risk Assessment",
+      "Secure Software Development Methodologies",
+      "Security Verification and Validation",
+      "Software Metrics",
+    ],
+  },
+  {
+    title: "AREA 7: TRUST MANAGEMENT AND USABILITY",
+    topics: [
+      "Human factors",
+      "Reliability and Dependability",
+      "Security Requirements",
+      "Security Metrics and Measurement",
+      "Security usability",
+      "Trust Management and Reputation Systems",
+    ],
+  },
+];
 
 const CallForPapers = () => {
   return (
@@ -120,82 +234,55 @@ const CallForPapers = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-7xl mx-auto mt-20"
+            className="py-16 bg-gradient-to-b from-white to-gray-50"
           >
-            <h2 className="text-3xl font-semibold mb-12 text-center">
-              Research Topics
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                "NETWORKS & SECURITY",
-                "INTELLIGENT SYSTEMS & AI",
-                "INNOVATION & SUSTAINABILITY",
-              ].map((title, index) => (
-                <motion.div
-                  key={title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-all duration-300 hover:border-[#db4e1a]/30 hover:bg-[#db4e1a]/[0.05]"
-                >
-                  <h3 className="text-2xl font-semibold mb-6 text-center">
-                    {title}
-                  </h3>
-                  <ul className="space-y-3 text-gray-600">
-                    {title === "NETWORKS & SECURITY" && (
-                      <>
-                        <li>• Secure Communication Protocols</li>
-                        <li>
-                          • Blockchain and Distributed Ledger Technologies
-                        </li>
-                        <li>• Cybersecurity in IoT and Edge Networks</li>
-                        <li>
-                          • Privacy-Preserving Systems and Data Protection
-                        </li>
-                        <li>
-                          • Network Resilience and Fault-Tolerant Architectures
-                        </li>
-                        <li>• Trust Management in Decentralized Systems</li>
-                        <li>• Quantum-Safe Cryptography</li>
-                        <li>• Ethical Hacking and Threat Analysis</li>
-                      </>
-                    )}
-                    {title === "INTELLIGENT SYSTEMS & AI" && (
-                      <>
-                        <li>• Explainable and Ethical AI</li>
-                        <li>• AI for Cybersecurity and Threat Detection</li>
-                        <li>• Machine Learning for Network Optimization</li>
-                        <li>• Smart Cities and Intelligent Infrastructure</li>
-                        <li>• Autonomous Systems and Robotics</li>
-                        <li>• AI Governance and Accountability</li>
-                        <li>• Human-Centered AI Design</li>
-                        <li>• AI-Driven Decision Support Systems</li>
-                      </>
-                    )}
-                    {title === "INNOVATION & SUSTAINABILITY" && (
-                      <>
-                        <li>• Green and Energy-Efficient Networking</li>
-                        <li>• Sustainable AI and Edge Computing</li>
-                        <li>• Digital Inclusion and Access in Technology</li>
-                        <li>
-                          • Policy, Governance, and Standards for Trusted
-                          Systems
-                        </li>
-                        <li>• Societal Impacts of Intelligent Systems</li>
-                        <li>
-                          • Interdisciplinary Approaches in Technology
-                          Innovation
-                        </li>
-                        <li>• Secure and Transparent Digital Economies</li>
-                        <li>
-                          • Technology for Social Good and Community Empowerment
-                        </li>
-                      </>
-                    )}
-                  </ul>
-                </motion.div>
-              ))}
+            <div className="container mx-auto">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-8 relative pb-3 uppercase">
+                Research Topics
+                <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                {tracksData.map((track, index) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    key={index}
+                    className={`
+                      p-6 rounded-xl transition-all duration-300
+                      bg-gradient-to-br from-orange-50 to-white
+                      border border-orange-100
+                      hover:shadow-[0_0_30px_rgba(251,146,60,0.2)]
+                      hover:border-orange-200 hover:-translate-y-1
+                      cursor-pointer relative
+                      overflow-hidden
+                    `}
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      {getIconForTrack(index)}
+                      <h3 className="text-xl font-semibold text-gray-800">
+                        {track.title.replace(/AREA \d+: /, "")}
+                      </h3>
+                    </div>
+
+                    <ul className="space-y-2 relative z-10">
+                      {track.topics.map((topic, topicIndex) => (
+                        <motion.li
+                          key={topicIndex}
+                          className="text-gray-600 text-sm flex items-center gap-2"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+                          {topic}
+                        </motion.li>
+                      ))}
+                    </ul>
+
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-100/20 to-transparent transition-opacity duration-300 opacity-0 hover:opacity-100" />
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
 
