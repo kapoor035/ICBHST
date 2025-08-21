@@ -61,16 +61,43 @@ const Navbar = () => {
                 <SheetContent>
                   <SheetHeader>
                     <SheetDescription className="flex flex-col justify-start items-start gap-8">
-                      <div className="flex flex-col justify-start items-start gap-8">
+                      <div className="flex flex-col justify-start items-start gap-4 w-full">
                         {menu.map((item) => (
-                          <SheetClose asChild key={item.id}>
-                            <button
-                              onClick={() => handleNavigation(item.link)}
-                              className="font-semibold hover:underline transition-all"
-                            >
-                              {item.label}
-                            </button>
-                          </SheetClose>
+                          <div key={item.id} className="w-full">
+                            {!item.dropdownItems ? (
+                              <SheetClose asChild>
+                                <button
+                                  onClick={() => handleNavigation(item.link)}
+                                  className="font-semibold hover:underline transition-all text-left w-full"
+                                >
+                                  {item.label}
+                                </button>
+                              </SheetClose>
+                            ) : (
+                              <div className="flex flex-col gap-2 w-full">
+                                <span className="font-semibold text-left">
+                                  {item.label}
+                                </span>
+                                <div className="flex flex-col gap-2 w-full">
+                                  {item.dropdownItems.map((dropdownItem) => (
+                                    <SheetClose asChild key={dropdownItem.id}>
+                                      <button
+                                        onClick={() =>
+                                          handleNavigation(dropdownItem.link)
+                                        }
+                                        className="text-sm text-gray-600 hover:text-gray-900 transition-all flex items-center gap-3 w-full pl-3"
+                                      >
+                                        <span className="w-1.5 h-1.5 rounded-full bg-gray-400 flex-shrink-0"></span>
+                                        <span className="text-left">
+                                          {dropdownItem.label}
+                                        </span>
+                                      </button>
+                                    </SheetClose>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                       <div>
