@@ -26,7 +26,7 @@ const Hero = () => {
                 <source src='/videos/hero-video.mp4' type='video/mp4' height={500} />
       </video>
 
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
       <div className="px-4 text-center absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
         <div className="-mt-48 md:-mt-16 sm:px-16">
           <Image
