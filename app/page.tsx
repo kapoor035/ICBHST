@@ -6,6 +6,7 @@ import Committee from "@/components/Committee";
 import Contact from "@/components/Contact";
 import Schedule from "@/components/Schedule";
 import CallForPapers from "@/components/CallForPapers";
+import Tracks from "@/components/Tracks";
 import Jaipur from "@/components/Jaipur";
 import Venue from "@/components/Venue";
 
@@ -20,6 +21,7 @@ export default function Home() {
           <About />
         </div>
       </div>
+      <Tracks />
       <Speakers />
       <Jaipur />
       <Venue />

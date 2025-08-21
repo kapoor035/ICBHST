@@ -2,9 +2,9 @@ const Venue = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-8 relative pb-3">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-8 relative pb-3 uppercase">
           Venue
-          <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-gray-300 rounded-full"></div>
+          <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
         <div className="max-w-5xl mx-auto text-center mb-8">
           <p className="text-gray-600 text-justify mb-6 text-lg">
