@@ -94,7 +94,7 @@ export const speakers = [
     {
         id: 7,
         fullName: 'Dr Shiv Mohan',
-        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
+        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist ',
         profileimage: '/images/speakers/Shiv-Mohan.jpg',
         linkedin: '#',
         website: '#'
