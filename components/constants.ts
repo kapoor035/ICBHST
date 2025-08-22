@@ -1,5 +1,11 @@
 export const menu = [
     {
+        id: 0,
+        label: 'Home',
+        link: '/',
+        newTab: false,
+    },
+    {
         id: 1,
         label: 'About',
         link: '/#Introduction',
