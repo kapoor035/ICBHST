@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   FaShieldAlt,
   FaServer,
@@ -11,6 +11,8 @@ import {
   FaClipboardCheck,
   FaUserLock,
   FaEllipsisH,
+  FaChevronDown,
+  FaTimes,
 } from "react-icons/fa";
 
 interface TrackData {
@@ -184,11 +186,85 @@ const useInView = () => {
   return [ref, isInView] as const;
 };
 
+const Modal = ({ isOpen, onClose, track, icon }: any) => {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+    >
+      <motion.div
+        ref={modalRef}
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.95, opacity: 0 }}
+        className="bg-white rounded-xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+      >
+        <button
+          onClick={onClose}
+          className="absolute right-3 top-3 text-gray-500 hover:text-gray-700 p-1 rounded-full hover:bg-gray-100"
+        >
+          <FaTimes className="w-4 h-4" />
+        </button>
+
+        <div className="flex items-center gap-4 mb-6 pr-8">
+          {icon}
+          <h3 className="text-2xl font-bold text-gray-800">
+            {track.title.replace(/AREA \d+: /, "")}
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {track.topics.map((topic: string, index: number) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+              className="bg-orange-50 p-4 rounded-lg border border-orange-100"
+            >
+              <p className="text-gray-700">{topic}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
 const Tracks = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [showAll, setShowAll] = useState(false);
   const [ref, isInView] = useInView();
   const [isMobile, setIsMobile] = useState(false);
+  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+  const [selectedTrack, setSelectedTrack] = useState<number | null>(null);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -199,6 +275,14 @@ const Tracks = () => {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  const openModal = (index: number) => {
+    setSelectedTrack(index);
+  };
+
+  const closeModal = () => {
+    setSelectedTrack(null);
+  };
 
   const visibleTracks =
     isMobile || showAll ? tracksData : tracksData.slice(0, 6);
@@ -221,6 +305,7 @@ const Tracks = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               key={index}
+              onClick={() => openModal(index)}
               className={`
                 p-6 rounded-xl transition-all duration-300
                 bg-gradient-to-br from-orange-50 to-white
@@ -228,47 +313,31 @@ const Tracks = () => {
                 hover:shadow-[0_0_30px_rgba(251,146,60,0.2)]
                 hover:border-orange-200 hover:-translate-y-1
                 cursor-pointer relative
-                overflow-hidden
               `}
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className="flex items-center gap-3 mb-4">
-                {" "}
-                {/* Changed to horizontal layout */}
-                {getIconForTrack(index)}
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {track.title.replace(/AREA \d+: /, "")}
-                </h3>
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 flex-1">
+                  {getIconForTrack(index)}
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {track.title.replace(/AREA \d+: /, "")}
+                  </h3>
+                </div>
+                <FaChevronDown className="text-orange-500 w-5 h-5" />
               </div>
-
-              <ul className="space-y-2 relative z-10">
-                {track.topics.map((topic, topicIndex) => (
-                  <motion.li
-                    key={topicIndex}
-                    initial={false}
-                    animate={{
-                      x: hoveredCard === index ? 8 : 0,
-                      transition: { delay: topicIndex * 0.03 },
-                    }}
-                    className="text-gray-600 text-sm flex items-center gap-2"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
-                    {topic}
-                  </motion.li>
-                ))}
-              </ul>
-
-              <div
-                className={`
-                  absolute inset-0 bg-gradient-to-br from-orange-100/20 to-transparent
-                  transition-opacity duration-300
-                  ${hoveredCard === index ? "opacity-100" : "opacity-0"}
-                `}
-              />
             </motion.div>
           ))}
         </div>
+
+        <AnimatePresence>
+          {selectedTrack !== null && (
+            <Modal
+              isOpen={selectedTrack !== null}
+              onClose={closeModal}
+              track={tracksData[selectedTrack]}
+              icon={getIconForTrack(selectedTrack)}
+            />
+          )}
+        </AnimatePresence>
 
         {!isMobile && tracksData.length > 6 && (
           <div className="flex justify-center mt-8">
