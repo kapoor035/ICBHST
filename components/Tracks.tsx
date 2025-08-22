@@ -152,7 +152,7 @@ const getIconForTrack = (index: number) => {
     FaEllipsisH, // Other Topics
   ];
   const Icon = icons[index] || FaEllipsisH;
-  return <Icon className="w-6 h-6 text-orange-500" />; // removed mb-3
+  return <Icon className="w-6 h-6 text-[#c84b13]" />; // changed color here
 };
 
 const useInView = () => {
@@ -284,8 +284,8 @@ const Tracks = () => {
 
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-8 relative pb-3 uppercase">
+      <div className="flex flex-col justify-center items-center gap-12 text-center">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase text-black relative pb-3">
           Conference Tracks
           <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
@@ -317,7 +317,7 @@ const Tracks = () => {
                     {track.title.replace(/AREA \d+: /, "")}
                   </h3>
                 </div>
-                <FaChevronDown className="text-orange-500 w-3 h-3" />
+                <FaChevronDown className="text-[#c84b13] w-3 h-3" />
               </div>
             </motion.div>
           ))}
