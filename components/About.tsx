@@ -54,7 +54,6 @@ const sdgoals = [
     id: 10,
     pic: "/images/sdgoals/10.jpg",
   },
-
   {
     id: 11,
     pic: "/images/sdgoals/11.png",
@@ -125,6 +124,133 @@ const About = () => {
 
   return (
     <div className="overflow-hidden" id="Introduction">
+      <div className="w-full bg-orange-50 pt-2 sm:pt-3 pb-4 sm:pb-6">
+        <div className="px-4 sm:px-6">
+          <div className="max-w-[100rem] mx-auto flex flex-col md:flex-row justify-start items-center md:items-start gap-4 md:gap-6">
+            {/* Left side: Title */}
+            <div className="flex-shrink-0 w-full md:w-auto text-center md:text-left">
+              <div className="rounded-tl-2xl rounded-br-2xl bg-secondaryBg px-6 sm:px-8 py-2 sm:py-3 text-white font-semibold text-sm sm:text-base md:text-lg shadow-md inline-block">
+                Important Dates
+              </div>
+            </div>
+
+            {/* Right side: Dates */}
+            <div className="w-full overflow-x-auto">
+              <div className="min-w-max md:min-w-0 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+                {/* Date Items */}
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="text-orange-500 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <span className="text-gray-800 text-sm sm:text-base font-semibold whitespace-nowrap">
+                      Call for Paper
+                    </span>
+                    <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
+                      20 September, 2025
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="text-orange-500 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <span className="text-gray-800 text-sm sm:text-base font-semibold">
+                      Submission
+                    </span>
+                    <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
+                      25 December, 2025
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="text-orange-500 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <span className="text-gray-800 text-sm sm:text-base font-semibold">
+                      Acceptance
+                    </span>
+                    <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
+                      5 January, 2026
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="text-orange-500 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <span className="text-gray-800 text-sm sm:text-base font-semibold">
+                      Registration
+                    </span>
+                    <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
+                      20 January, 2026
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16 flex flex-col justify-center items-center gap-4">
         {/* <motion.div className='flex' {...slidingAnimation}>
           {Array.from({ length: sdgoals.length * 30 }).map((_, i) => {
@@ -137,133 +263,6 @@ const About = () => {
         <div className='w-full h-full flex justify-center items-center'>
           <Image src={'/images/graphics/important-dates.png'} alt="important-dates" width={1000} height={1000} />
         </div> */}
-
-        {/* Replaced motion div with Important Dates section */}
-        <div className="w-full bg-orange-50 py-4 px-4 md:px-24">
-          {/* Container with left alignment for title */}
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-start items-center md:items-start gap-8">
-            {/* Left side: Title */}
-            <div className="flex-shrink-0 md:pl-0 md:mb-0 w-full md:w-auto text-center md:text-left">
-              <div className="rounded-full bg-secondaryBg px-8 py-3 text-white font-semibold text-lg shadow-md inline-block">
-                Important Dates
-              </div>
-            </div>
-
-            {/* Right side: Dates */}
-            <div className="w-full">
-              {/* Date Items Container */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
-                <div className="flex items-center gap-4">
-                  <div className="text-orange-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-12 h-12"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <span className="text-gray-800 text-base font-semibold whitespace-nowrap">
-                      Call for Paper
-                    </span>
-                    <span className="text-gray-600 text-sm font-medium">
-                      20 September, 2025
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="text-orange-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-12 h-12"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <span className="text-gray-800 text-base font-semibold">
-                      Submission
-                    </span>
-                    <span className="text-gray-600 text-sm font-medium">
-                      25 December, 2025
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="text-orange-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-12 h-12"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <span className="text-gray-800 text-base font-semibold">
-                      Acceptance
-                    </span>
-                    <span className="text-gray-600 text-sm font-medium">
-                      5 January, 2026
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="text-orange-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-12 h-12"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <span className="text-gray-800 text-base font-semibold">
-                      Registration
-                    </span>
-                    <span className="text-gray-600 text-sm font-medium">
-                      20 January, 2026
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="w-full h-full flex justify-center items-center">
           <Image
