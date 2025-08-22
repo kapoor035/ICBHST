@@ -43,7 +43,10 @@ const Hero = () => {
           />
         </div>
         <div className="flex gap-4 mt-8">
-          <button className="px-6 py-3 bg-secondaryBg text-white font-bold rounded-full hover:bg-opacity-90 transition-all">
+          <button
+            onClick={() => router.push("/registration")}
+            className="px-6 py-3 bg-secondaryBg text-white font-bold rounded-full hover:bg-opacity-90 transition-all"
+          >
             Register Now
           </button>
           <button
