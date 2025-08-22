@@ -139,7 +139,7 @@ const About = () => {
               <div className="min-w-max md:min-w-0 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
                 {/* Date Items */}
                 <div className="flex items-center gap-2 sm:gap-4">
-                  <div className="text-orange-500 flex-shrink-0">
+                  <div className="text-[#c84b13] flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -166,7 +166,7 @@ const About = () => {
                 </div>
 
                 <div className="flex items-center gap-2 sm:gap-4">
-                  <div className="text-orange-500 flex-shrink-0">
+                  <div className="text-[#c84b13] flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -193,7 +193,7 @@ const About = () => {
                 </div>
 
                 <div className="flex items-center gap-2 sm:gap-4">
-                  <div className="text-orange-500 flex-shrink-0">
+                  <div className="text-[#c84b13] flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -220,7 +220,7 @@ const About = () => {
                 </div>
 
                 <div className="flex items-center gap-2 sm:gap-4">
-                  <div className="text-orange-500 flex-shrink-0">
+                  <div className="text-[#c84b13] flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
