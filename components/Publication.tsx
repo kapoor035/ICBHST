@@ -10,7 +10,7 @@ const Publication = () => {
           <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
         <p className="max-w-3xl text-center text-gray-700 text-lg">
-          The proceedings of ICAIC 2025 will be published in Lecture Notes in
+          The proceedings of TrustNet 2026 will be published in Lecture Notes in
           Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS,
           INSPEC, WTI Frankfurt eG, zbMATH.
         </p>
