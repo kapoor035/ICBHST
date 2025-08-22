@@ -77,7 +77,7 @@ export const menu = [
     {
         id: 6,
         label: 'Contact',
-        link: '/#Contact',
+        link: '#footer', // Changed from '/#Contact'
         newTab: false,
     },
 ]
