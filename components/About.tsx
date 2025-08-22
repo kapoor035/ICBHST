@@ -251,38 +251,25 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16 flex flex-col justify-center items-center gap-4">
-        {/* <motion.div className='flex' {...slidingAnimation}>
-          {Array.from({ length: sdgoals.length * 30 }).map((_, i) => {
-            const image = imagesGenerator.next().value;
-            return <Image key={i} src={image.pic} alt='Goals' width={75} height={75} />;
-          })}
-        </motion.div> */}
-
-        {/* Replaced motion div with Important Dates banner
-        <div className='w-full h-full flex justify-center items-center'>
-          <Image src={'/images/graphics/important-dates.png'} alt="important-dates" width={1000} height={1000} />
-        </div> */}
-
-        <div className="w-full h-full flex justify-center items-center">
-          <Image
-            className=""
-            src={"/images/graphics/about-banner.png"}
-            alt="about-banner"
-            width={1000}
-            height={1000}
-          />
-        </div>
-        <div className="flex flex-col gap-4">
-          {/* <div className='flex gap-2'>
-            <div className='px-1 bg-secondaryBg'></div>
-            <h2 className='text-3xl font-black'>International Circular Economy Conclave 2024</h2>
-          </div> */}
-          <p className="text-base md:text-lg font-light text-justify">
-            {introText}
-          </p>
+      <div className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16">
+        <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:gap-12">
+          <div className="w-full md:w-1/2">
+            <Image
+              className="w-full"
+              src={"/images/graphics/about-banner.png"}
+              alt="about-banner"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="flex flex-col gap-4 md:w-1/2 mt-6 md:mt-8">
+            <p className="text-base md:text-lg font-light text-justify">
+              {introText}
+            </p>
+          </div>
         </div>
       </div>
+
       <div className="px-4 sm:px-8 md:px-16 py-12 md:p-16 text-center text-white bg-secondaryBg flex flex-col justify-center items-center gap-4">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-black">
           About the Conference
