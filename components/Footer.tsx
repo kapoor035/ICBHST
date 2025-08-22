@@ -45,16 +45,18 @@ const Footer = () => {
       <div className="flex items-center gap-4">
         <Image
           src={"/images/logo/muj-logo-icon.png"}
-          alt="CirCon'24"
+          alt="TrustNet'26"
           width={50}
           height={50}
         />
-        <Image
-          src={"/images/logo/sdc-logo-white.png"}
-          alt="CirCon'24"
-          width={75}
-          height={50}
-        />
+        <Link href="https://sdcmuj.com/" target="_blank" rel="noopener noreferrer">
+          <Image
+            src={"/images/logo/sdc-logo-white.png"}
+            alt="TrustNet'26"
+            width={75}
+            height={50}
+          />
+        </Link>
       </div>
       <div className="">
         <p className="text-sm text-gray-300 font-light">
