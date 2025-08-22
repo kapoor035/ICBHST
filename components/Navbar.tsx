@@ -101,12 +101,14 @@ const Navbar = () => {
                         ))}
                       </div>
                       <div>
-                        <button
+                        <Image
+                          src="/images/graphics/hybrid-icon.png"
+                          alt="Hybrid Icon"
+                          width={100}
+                          height={40}
+                          className="cursor-pointer"
                           onClick={() => handleNavigation("/#register")}
-                          className="px-6 py-2 bg-secondaryBg text-white rounded-full font-semibold hover:opacity-90 transition-all"
-                        >
-                          Register
-                        </button>
+                        />
                       </div>
                     </SheetDescription>
                   </SheetHeader>
@@ -156,12 +158,14 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          <button
+          <Image
+            src="/images/graphics/hybrid-icon.png"
+            alt="Hybrid Icon"
+            width={100}
+            height={40}
+            className="cursor-pointer"
             onClick={() => handleNavigation("/#register")}
-            className="px-6 py-2 bg-secondaryBg text-white rounded-full font-semibold hover:opacity-90 transition-all"
-          >
-            Register
-          </button>
+          />
         </div>
       </div>
     </>
