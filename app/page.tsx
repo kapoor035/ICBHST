@@ -9,6 +9,7 @@ import CallForPapers from "@/components/CallForPapers";
 import Tracks from "@/components/Tracks";
 import Jaipur from "@/components/Jaipur";
 import Venue from "@/components/Venue";
+import Publication from "@/components/Publication";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </div>
       <Tracks />
       <Speakers />
+      <Publication />
       <Jaipur />
       <Venue />
       {/* <Contact /> */}
