@@ -5,7 +5,7 @@ import PhotoCard from "./ui/photoCard";
 const Speakers = () => {
   return (
     <div
-      className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 py-16 md:p-20 xl:px-52 text-black"
+      className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-2 sm:px-4 py-16 md:p-16 lg:px-24 text-black"
       id="Speakers"
     >
       <div className="flex flex-col justify-center items-center gap-12 text-center">
@@ -13,13 +13,15 @@ const Speakers = () => {
           Our Eminent Speakers
           <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full">
           {speakers.map((speaker, index) => (
             <PhotoCard
               key={index}
               profileimage={speaker.profileimage}
               fullName={speaker.fullName}
               des={speaker.des}
+              linkedin={speaker.linkedin}
+              website={speaker.website}
             />
           ))}
         </div>

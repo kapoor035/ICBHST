@@ -83,41 +83,45 @@ export const menu = [
 ]
 
 export const speakers = [
-    // {
-    //     id: 1,
-    //     fullName: 'V Ananth Nageswaran',
-    //     des: 'Chief Economic Advisor for India',
-    //     profileimage: '',
-    // },
     {
         id: 2,
         fullName: 'Vineeta Hariharan',
         des: 'Senior Public Policy Expert',
         profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
+        linkedin: '#',
+        website: '#'
     },
     {
         id: 7,
         fullName: 'Dr Shiv Mohan',
         des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist, ISRO',
         profileimage: '/images/speakers/Shiv-Mohan.jpg',
+        linkedin: '#',
+        website: '#'
     },
     {
         id: 3,
         fullName: 'Dr Vijender Singh Chauhan',
         des: 'UPSC Expert, Associate Professor, DU',
         profileimage: '/images/speakers/Vijender-Chauhan.JPG',
+        linkedin: '#',
+        website: '#'
     },
     {
         id: 4,
         fullName: 'Dr Pawan Kumar Singh',
         des: 'Director, IIM Trichy | Professor of HR',
         profileimage: '/images/speakers/Pawan-Kumar-Singh.jpg',
+        linkedin: '#',
+        website: '#'
     },
     {
         id: 5,
         fullName: 'Dr Shuchi Sinha',
         des: 'Associate Professor, DMS, IIT Delhi',
         profileimage: '/images/speakers/Shuchi-Sinha.JPG',
+        linkedin: '#',
+        website: '#'
     },
     // {
     //     id: 6,
@@ -130,30 +134,40 @@ export const speakers = [
         fullName: 'Siddharth R',
         des: 'Career Diplomat, UN | Adjunct Professor, MUJ',
         profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        linkedin: '#',
+        website: '#'
     },
-    // {
-    //     id: 9,
-    //     fullName: 'Chef Thiru',
-    //     des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
-    //     profileimage: '',
-    // },
-    // {
-    //     id: 10,
-    //     fullName: 'Aravind Chinchure',
-    //     des: 'Founder and CEO of QLeap Academy',
-    //     profileimage: '',
-    // },
+    {
+        id: 9,
+        fullName: 'Chef Thiru',
+        des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
+        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        linkedin: '#',
+        website: '#'
+    },
+    {
+        id: 10,
+        fullName: 'Aravind Chinchure',
+        des: 'Founder and CEO of QLeap Academy',
+        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        linkedin: '#',
+        website: '#'
+    },
     {
         id: 11,
         fullName: 'Monika Singh',
         des: 'Sustainability Expert in Aviation, IndiGo Airlines',
         profileimage: '/images/speakers/Monika-Singh.jpg',
+        linkedin: '#',
+        website: '#'
     },
     {
         id: 12,
         fullName: 'Shilpa Mehta',
         des: 'Executive Director, PwC India',
         profileimage: '/images/speakers/Shilpa-Mehta.JPG',
+        linkedin: '#',
+        website: '#'
     },
     // {
     //     id: 13,
