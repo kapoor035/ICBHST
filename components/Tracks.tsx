@@ -260,15 +260,13 @@ const Modal = ({ isOpen, onClose, track, icon }: any) => {
 
 const Tracks = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-  const [showAll, setShowAll] = useState(false);
   const [ref, isInView] = useInView();
   const [isMobile, setIsMobile] = useState(false);
-  const [expandedCards, setExpandedCards] = useState<number[]>([]);
   const [selectedTrack, setSelectedTrack] = useState<number | null>(null);
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint
+      setIsMobile(window.innerWidth < 768);
     };
 
     checkMobile();
@@ -284,22 +282,19 @@ const Tracks = () => {
     setSelectedTrack(null);
   };
 
-  const visibleTracks =
-    isMobile || showAll ? tracksData : tracksData.slice(0, 6);
-
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-8 relative pb-3 uppercase">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-8 relative pb-3 uppercase">
           Conference Tracks
           <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
 
         <div
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
         >
-          {visibleTracks.map((track, index) => (
+          {tracksData.map((track, index) => (
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -307,7 +302,7 @@ const Tracks = () => {
               key={index}
               onClick={() => openModal(index)}
               className={`
-                p-6 rounded-xl transition-all duration-300
+                p-5 rounded-xl transition-all duration-300
                 bg-gradient-to-br from-orange-50 to-white
                 border border-orange-100
                 hover:shadow-[0_0_30px_rgba(251,146,60,0.2)]
@@ -318,11 +313,11 @@ const Tracks = () => {
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 flex-1">
                   {getIconForTrack(index)}
-                  <h3 className="text-xl font-semibold text-gray-800">
+                  <h3 className="text-sm md:text-base font-semibold text-gray-800">
                     {track.title.replace(/AREA \d+: /, "")}
                   </h3>
                 </div>
-                <FaChevronDown className="text-orange-500 w-5 h-5" />
+                <FaChevronDown className="text-orange-500 w-3 h-3" />
               </div>
             </motion.div>
           ))}
@@ -338,17 +333,6 @@ const Tracks = () => {
             />
           )}
         </AnimatePresence>
-
-        {!isMobile && tracksData.length > 6 && (
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="px-6 py-3 bg-secondaryBg text-white rounded-full font-bold text-lg hover:opacity-90 transition-all duration-300 hover:scale-105"
-            >
-              {showAll ? "View Less" : "View More"}
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );
