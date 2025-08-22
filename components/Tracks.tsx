@@ -284,15 +284,15 @@ const Tracks = () => {
 
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-      <div className="flex flex-col justify-center items-center gap-12 text-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase text-black relative pb-3">
+      <div className="flex flex-col justify-center items-center gap-12 text-left md:text-center">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase text-black relative pb-3 w-full px-4 md:px-0">
           Conference Tracks
-          <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
+          <div className="absolute -bottom-1 left-0 md:left-1/2 transform md:-translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
 
         <div
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full px-4"
         >
           {tracksData.map((track, index) => (
             <motion.div
@@ -308,6 +308,7 @@ const Tracks = () => {
                 hover:shadow-[0_0_30px_rgba(251,146,60,0.2)]
                 hover:border-orange-200 hover:-translate-y-1
                 cursor-pointer relative
+                text-left
               `}
             >
               <div className="flex items-center justify-between gap-3">
