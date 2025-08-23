@@ -10,7 +10,7 @@ const Jaipur = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-4 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-8 relative pb-3 uppercase">
           About Jaipur
