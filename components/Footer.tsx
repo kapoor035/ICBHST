@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-0.5">
             <h4 className="text-sm font-semibold text-white">
-              Dr Amit Garg (Convener)
+              Dr. Amit Garg (Convener)
             </h4>
             <a
               href="tel:+91-9897260563"
@@ -32,19 +32,19 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-0.5">
             <h4 className="text-sm font-semibold text-white">
-              Dr Shishir Singh Chauhan (Convener)
+              Dr. Mahesh Jangid (Convener)
             </h4>
             <a
               href="tel:+91-7905307175"
               className="text-sm text-gray-300 hover:text-white"
             >
-              +91-7905307175
+              +91-9799969068
             </a>
             <a
-              href="mailto:shishir.chauhan@jaipur.manipal.edu"
+              href="mailto:mahesh.jangid@jaipur.manipal.edu"
               className="text-sm text-gray-300 hover:text-white"
             >
-              shishir.chauhan@jaipur.manipal.edu
+              mahesh.jangid@jaipur.manipal.edu
             </a>
           </div>
         </div>
