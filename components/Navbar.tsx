@@ -43,30 +43,32 @@ const Navbar = () => {
     <>
       <div className="sticky top-0 z-20 md:relative w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white">
         <div className="w-full flex flex-wrap justify-between items-center border-b-2">
-          <Image
-            className="w-44 sm:w-48 lg:w-60 p-2"
-            src={"/images/logo/muj-logo.svg"}
-            alt="CirCon'24"
-            width={250}
-            height={50}
-          />
-
-          {/* Center logos */}
-          <div className="hidden lg:flex items-center justify-center gap-60 flex-grow">
+          <div className="flex items-center gap-4">
             <Image
-              className="w-32"
-              src="/images/logo/scopus-logo.png"
-              alt="Scopus"
-              width={120}
-              height={40}
+              className="w-44 sm:w-48 lg:w-60 p-2"
+              src={"/images/logo/muj-logo.svg"}
+              alt="CirCon'24"
+              width={250}
+              height={50}
             />
-            <Image
-              className="w-32"
-              src="/images/logo/springer.png"
-              alt="Springer"
-              width={120}
-              height={40}
-            />
+            <span className="hidden lg:block text-gray-300 text-2xl">|</span>
+            <div className="hidden lg:flex items-center gap-6">
+              <Image
+                className="w-24"
+                src="/images/logo/scopus-logo.png"
+                alt="Scopus"
+                width={100}
+                height={35}
+              />
+              <span className="text-gray-300 text-xl">|</span>
+              <Image
+                className="w-24"
+                src="/images/logo/springer.png"
+                alt="Springer"
+                width={110}
+                height={45}
+              />
+            </div>
           </div>
 
           {/* Mobile menu button */}
