@@ -20,9 +20,14 @@ const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleNavigation = (link: string) => {
-    const isAnchorLink = link.startsWith("/#");
+  const handleNavigation = (link: string, newTab?: boolean) => {
+    if (newTab) {
+      window.open(link, "_blank");
+      setIsOpen(false);
+      return;
+    }
 
+    const isAnchorLink = link.startsWith("/#");
     if (isAnchorLink) {
       const elementId = link.split("#")[1];
       if (pathname === "/") {
@@ -104,7 +109,10 @@ const Navbar = () => {
                                     <SheetClose asChild key={dropdownItem.id}>
                                       <button
                                         onClick={() =>
-                                          handleNavigation(dropdownItem.link)
+                                          handleNavigation(
+                                            dropdownItem.link,
+                                            dropdownItem.newTab
+                                          )
                                         }
                                         className="text-sm text-gray-600 hover:text-gray-900 transition-all flex items-center gap-3 w-full pl-3"
                                       >
@@ -182,7 +190,12 @@ const Navbar = () => {
                     {item.dropdownItems.map((dropdownItem) => (
                       <button
                         key={dropdownItem.id}
-                        onClick={() => handleNavigation(dropdownItem.link)}
+                        onClick={() =>
+                          handleNavigation(
+                            dropdownItem.link,
+                            dropdownItem.newTab
+                          )
+                        }
                         className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold"
                       >
                         {dropdownItem.label}
