@@ -50,9 +50,28 @@ const Navbar = () => {
             width={250}
             height={50}
           />
-          {/* <Image className='hidden lg:block w-32 lg:w-36' src={'/images/logo/ministry-of-external-affairs-logo.png'} alt="Ministry Of External Affairs" width={150} height={50} /> */}
+
+          {/* Center logos */}
+          <div className="hidden lg:flex items-center justify-center gap-60 flex-grow">
+            <Image
+              className="w-32"
+              src="/images/logo/scopus-logo.png"
+              alt="Scopus"
+              width={120}
+              height={40}
+            />
+            <Image
+              className="w-32"
+              src="/images/logo/springer.png"
+              alt="Springer"
+              width={120}
+              height={40}
+            />
+          </div>
+
+          {/* Mobile menu button */}
           <div className="flex justify-center items-center gap-4">
-            {/* <Image className='w-24 sm:w-28 lg:w-32' src={'/images/logo/viksit-bharat-logo.png'} alt="Viksit Bharat" width={150} height={50} /> */}
+            {/* <Image className='hidden lg:block w-32 lg:w-36' src={'/images/logo/ministry-of-external-affairs-logo.png'} alt="Ministry Of External Affairs" width={150} height={50} /> */}
             <div className="flex md:hidden">
               <Sheet>
                 <SheetTrigger>
@@ -119,21 +138,21 @@ const Navbar = () => {
           {/* <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} /> */}
           <div className="hidden lg:flex items-center gap-4">
             <Image
-              className="w-12" 
+              className="w-12"
               src="/images/sdg-goals/SDG4.png"
               alt="SDG 4"
               width={45}
               height={45}
             />
             <Image
-              className="w-12" 
+              className="w-12"
               src="/images/sdg-goals/SDG9.png"
               alt="SDG 9"
               width={45}
               height={45}
             />
             <Image
-              className="w-12" 
+              className="w-12"
               src="/images/sdg-goals/SDG11.png"
               alt="SDG 11"
               width={45}
