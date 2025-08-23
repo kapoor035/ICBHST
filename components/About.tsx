@@ -160,7 +160,7 @@ const About = () => {
                       Call for Paper
                     </span>
                     <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      20 September, 2025
+                      September 9, 2025
                     </span>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ const About = () => {
                       Submission
                     </span>
                     <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      25 December, 2025
+                      November 15, 2025
                     </span>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ const About = () => {
                       Acceptance
                     </span>
                     <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      5 January, 2026
+                      December 15. 2025
                     </span>
                   </div>
                 </div>
@@ -238,10 +238,10 @@ const About = () => {
                   </div>
                   <div className="flex flex-col items-start">
                     <span className="text-gray-800 text-sm sm:text-base font-semibold">
-                      Registration
+                      Registration End
                     </span>
                     <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      20 January, 2026
+                      December 25, 2025
                     </span>
                   </div>
                 </div>
