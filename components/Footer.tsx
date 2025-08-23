@@ -50,25 +50,23 @@ const Footer = () => {
         </div>
 
         {/* Center Column - Logos */}
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col items-center gap-3">
           <Image
-            src={"/images/logo/muj-logo-icon.png"}
+            src={"/images/logo/muj-white-logo.png"}
             alt="MUJ Logo"
-            width={50}
-            height={50}
+            width={290}
+            height={200}
           />
-          <Link
-            href="https://sdcmuj.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={"/images/logo/sdc-logo-white.png"}
-              alt="SDC Logo"
-              width={75}
-              height={50}
-            />
-          </Link>
+          <div className="text-center">
+            {/* <h3 className="text-white font-bold mb-1">
+              Manipal University Jaipur
+            </h3> */}
+            <p className="text-sm text-gray-300">
+              Dehmi Kalan, Off Jaipur-Ajmer Expressway,
+              <br />
+              Jaipur, Rajasthan, India-303007
+            </p>
+          </div>
         </div>
 
         {/* Right Column - Footer Logo */}
@@ -76,8 +74,8 @@ const Footer = () => {
           <Image
             src={"/images/graphics/footer-logo.png"}
             alt="Footer Logo"
-            width={400}
-            height={300}
+            width={360}
+            height={210}
           />
         </div>
       </div>
@@ -93,16 +91,16 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <p className="text-sm text-gray-400 flex items-center gap-1">
-            Developed by -{" "}
-            <Image
-              src="/images/logo/sdc-logo-white.png"
-              alt="SDC Logo"
-              width={30}
-              height={20}
-            />{" "}
-            Web Team
-          </p>
+            <p className="text-sm text-gray-400 flex items-center gap-1">
+              Developed by -{" "}
+              <Image
+                src="/images/logo/sdc-logo-white.png"
+                alt="SDC Logo"
+                width={30}
+                height={20}
+              />{" "}
+              Web Team
+            </p>
           </Link>
         </div>
       </div>
