@@ -88,7 +88,22 @@ const Footer = () => {
           <p className="text-sm text-gray-300 font-light">
             &copy; 2025 All rights reserved.
           </p>
-          <p className="text-sm text-gray-400">Developed by - SDC Web Team</p>
+          <Link
+            href="https://sdcmuj.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <p className="text-sm text-gray-400 flex items-center gap-1">
+            Developed by -{" "}
+            <Image
+              src="/images/logo/sdc-logo-white.png"
+              alt="SDC Logo"
+              width={30}
+              height={20}
+            />{" "}
+            Web Team
+          </p>
+          </Link>
         </div>
       </div>
     </footer>
