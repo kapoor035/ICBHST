@@ -41,7 +41,7 @@ const Venue = () => {
 
         <div className="max-w-6xl mx-auto mt-8">
           <p className="text-gray-600 text-lg">
-            <span className="font-semibold">Address:</span> Dehmi-Kalan, Near
+            <span className="font-semibold">Address:</span> Manipal University Jaipur, Dehmi-Kalan, Near
             GVK Toll Plaza, Jaipur-Ajmer Express Highway, Jaipur, Rajasthan
             303007, India
           </p>
