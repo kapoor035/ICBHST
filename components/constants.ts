@@ -85,41 +85,41 @@ export const menu = [
 export const speakers = [
     {
         id: 2,
-        fullName: 'Vineeta Hariharan',
-        des: 'Senior Public Policy Expert',
-        profileimage: '/images/speakers/Vineeta-Hariharan.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 7,
-        fullName: 'Dr Shiv Mohan',
-        des: 'Sr Director, Chandrayaan 1, Distinguished Career Scientist ',
-        profileimage: '/images/speakers/Shiv-Mohan.jpg',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 3,
-        fullName: 'Dr Vijender Singh Chauhan',
-        des: 'UPSC Expert, Associate Professor, DU',
-        profileimage: '/images/speakers/Vijender-Chauhan.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 4,
-        fullName: 'Dr Pawan Kumar Singh',
-        des: 'Director, IIM Trichy | Professor of HR',
-        profileimage: '/images/speakers/Pawan-Kumar-Singh.jpg',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 5,
-        fullName: 'Dr Shuchi Sinha',
-        des: 'Associate Professor, DMS, IIT Delhi',
-        profileimage: '/images/speakers/Shuchi-Sinha.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
@@ -131,86 +131,44 @@ export const speakers = [
     // },
     {
         id: 8,
-        fullName: 'Siddharth R',
-        des: 'Career Diplomat, UN | Adjunct Professor, MUJ',
-        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 9,
-        fullName: 'Chef Thiru',
-        des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
-        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 10,
-        fullName: 'Aravind Chinchure',
-        des: 'Founder and CEO of QLeap Academy',
-        profileimage: '/images/speakers/Siddharth-Rajhans.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 11,
-        fullName: 'Monika Singh',
-        des: 'Sustainability Expert in Aviation, IndiGo Airlines',
-        profileimage: '/images/speakers/Monika-Singh.jpg',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
     {
         id: 12,
-        fullName: 'Shilpa Mehta',
-        des: 'Executive Director, PwC India',
-        profileimage: '/images/speakers/Shilpa-Mehta.JPG',
+        fullName: 'Name',
+        des: 'Designation',
+        profileimage: '/images/speakers/blank-pfp.jpg',
         linkedin: '#',
         website: '#'
     },
-    // {
-    //     id: 13,
-    //     fullName: 'Dr Prayatna Jain',
-    //     des: 'Marketing & Economics, PIMR, Indore',
-    //     profileimage: '',
-    // },
-    // {
-    //     id: 14,
-    //     fullName: 'Dr Jayashree Periwal',
-    //     des: 'Chairperson, Jayashree Periwal Group of Institutions',
-    //     profileimage: '/images/speakers/Jayshree-Periwal.jpg',
-    // },
-    // {
-    //     id: 15,
-    //     fullName: 'Dr Ajit Upadhyay',
-    //     des: 'Sr Professor, PIMR Indore, Former Director, PIMR Dewas',
-    //     profileimage: '/images/speakers/Ajit-Upadhyay.JPG',
-    // },
-    // {
-    //     id: 16,
-    //     fullName: 'Chef K Thiru',
-    //     des: 'Principal, WGSHA, MAHE, Sustainability in Hospitality',
-    //     profileimage: '/images/speakers/Chef-Thiru.jpg',
-    // },
-    // {
-    //     id: 17,
-    //     fullName: 'Dr Aravind Chinchure',
-    //     des: 'Founder & CEO, QLeap Academy, & Member of Board of Management at MUJ',
-    //     profileimage: '/images/speakers/Aravind-Chinchure.jpeg',
-    // },
-    // {
-    //     id: 18,
-    //     fullName: 'Dr N D Mathur',
-    //     des: 'Dean at Jaipur School of Economics, JECRC University',
-    //     profileimage: '/images/speakers/N-D-Mathur.jpeg',
-    // },
-    // {
-    //     id: 19,
-    //     fullName: 'Dr Arun Shanbhag',
-    //     des: 'Dean FoE, Manipal University Jaipur',
-    //     profileimage: '/images/speakers/Arun-Shanbhag.jpeg',
-    // },
 ];
 
 export const committee = {

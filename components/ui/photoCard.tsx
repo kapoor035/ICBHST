@@ -35,7 +35,7 @@ const PhotoCard = ({
         <p className="text-gray-600 text-xs sm:text-sm min-h-[2.5em] leading-tight">
           {des}
         </p>
-        <div className="flex items-center justify-center gap-4 mt-2">
+        <div className="flex items-center justify-center gap-4 mt-0">
           {linkedin && (
             <a
               href={linkedin}
