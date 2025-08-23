@@ -123,7 +123,7 @@ const About = () => {
   };
 
   return (
-    <div className="overflow-hidden" id="Introduction">
+    <div className="overflow-hidden">
       <div className="w-full bg-orange-50 pt-2 sm:pt-3 pb-4 sm:pb-6">
         <div className="px-4 sm:px-6">
           <div className="max-w-[100rem] mx-auto flex flex-col md:flex-row justify-start items-center md:items-start gap-4 md:gap-6">
@@ -251,7 +251,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16">
+      <div
+        className="bg-[url(/images/bg/white-bg.webp)] bg-cover bg-no-repeat px-4 sm:px-8 md:px-16 pb-16 scroll-mt-47 pt-8"
+        id="Introduction"
+      >
         <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:gap-12">
           <div className="w-full md:w-1/2">
             <Image
