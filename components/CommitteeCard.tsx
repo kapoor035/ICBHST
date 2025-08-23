@@ -15,7 +15,7 @@ const CommitteeCard = ({ name, des, role, picture }: any) => {
         <h4 className="bg-secondaryBg text-white px-2 py-1 font-bold -mt-5">
           {name}
         </h4>
-        <p>{role}</p>
+        <p className="font-bold">{role}</p>
         <p>{des}</p>
       </div>
     </div>
