@@ -182,14 +182,14 @@ export const committee = {
         },
         {
             id: 2,
-            name: 'Prof. N. N. Sharma',
+            name: 'Prof. Dr. N. N. Sharma',
             des: 'President',
             role: 'Patron',
             picture: '/images/committee/dr-nnsharma.jpg',
         },
         {
             id: 3,
-            name: 'Prof. Karunakar A Kotegar',
+            name: 'Dr. Karunakar A Kotegar',
             des: 'Pro-President',
             role: 'Co-Patron',
             picture: '/images/committee/karunakar-1.jpg',
@@ -203,14 +203,14 @@ export const committee = {
         },
         {
             id: 5,
-            name: 'Dr. Nitu Bhatnagar',
+            name: 'Prof. Nitu Bhatnagar',
             des: 'Provost',
             role: 'Co-Patron',
             picture: '/images/committee/Nitu-Bhatnagar.jpg',
         },
         {
             id: 6,
-            name: 'Prof. Kuldip Singh Sangwan',
+            name: 'Prof. Dr. Kuldip Singh Sangwan',
             des: 'Dean – Faculty of Engineering',
             role: 'General Chair',
             picture: '/images/committee/Dr-Kuldip-Singh.jpg',
@@ -231,7 +231,7 @@ export const committee = {
         // },
         {
             id: 10,
-            name: 'Prof. Neha Chaudhary',
+            name: 'Prof. Dr. Neha Chaudhary',
             des: 'Professor & HoD, CSE',
             role: 'Program Chair',
             picture: '/images/committee/Neha-Chaudhary.jpeg',
