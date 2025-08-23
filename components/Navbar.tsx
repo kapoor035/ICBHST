@@ -117,13 +117,29 @@ const Navbar = () => {
             </div>
           </div>
           {/* <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} /> */}
-          <Image
-            className="hidden lg:block w-40 lg:w-48"
-            src={"/images/logo/sdg-horizontal-logo.png"}
-            alt="Sustainable Development Goals"
-            width={250}
-            height={50}
-          />
+          <div className="hidden lg:flex items-center gap-4">
+            <Image
+              className="w-12" 
+              src="/images/sdg-goals/SDG4.png"
+              alt="SDG 4"
+              width={45}
+              height={45}
+            />
+            <Image
+              className="w-12" 
+              src="/images/sdg-goals/SDG9.png"
+              alt="SDG 9"
+              width={45}
+              height={45}
+            />
+            <Image
+              className="w-12" 
+              src="/images/sdg-goals/SDG11.png"
+              alt="SDG 11"
+              width={45}
+              height={45}
+            />
+          </div>
         </div>
       </div>
       <div className="sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-between items-center gap-8 drop-shadow-xl">
