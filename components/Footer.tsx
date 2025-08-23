@@ -51,12 +51,14 @@ const Footer = () => {
 
         {/* Center Column - Logos */}
         <div className="flex flex-col items-center gap-3">
-          <Image
-            src={"/images/logo/muj-white-logo.png"}
-            alt="MUJ Logo"
-            width={290}
-            height={200}
-          />
+          <Link href="/#" className="cursor-pointer">
+            <Image
+              src={"/images/logo/muj-white-logo.png"}
+              alt="MUJ Logo"
+              width={290}
+              height={200}
+            />
+          </Link>
           <div className="text-center">
             {/* <h3 className="text-white font-bold mb-1">
               Manipal University Jaipur
@@ -71,12 +73,14 @@ const Footer = () => {
 
         {/* Right Column - Footer Logo */}
         <div>
-          <Image
-            src={"/images/graphics/footer-logo.png"}
-            alt="Footer Logo"
-            width={360}
-            height={210}
-          />
+          <Link href="/#" className="cursor-pointer">
+            <Image
+              src={"/images/graphics/footer-logo.png"}
+              alt="Footer Logo"
+              width={360}
+              height={210}
+            />
+          </Link>
         </div>
       </div>
 

@@ -49,6 +49,7 @@ const Navbar = () => {
       <div className="sticky top-0 z-20 md:relative w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white">
         <div className="w-full flex flex-wrap justify-between items-center border-b-2">
           <div className="flex items-center gap-4">
+            <Link href="/#" className="cursor-pointer">
             <Image
               className="w-44 sm:w-48 lg:w-60 p-2"
               src={"/images/logo/muj-logo.svg"}
@@ -56,6 +57,7 @@ const Navbar = () => {
               width={250}
               height={50}
             />
+            </Link>
             <span className="hidden lg:block text-gray-300 text-2xl">|</span>
             <div className="hidden lg:flex items-center gap-6">
               <Image
