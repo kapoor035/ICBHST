@@ -285,6 +285,41 @@ export const committee = {
             role: 'Organizing Co-Chair',
             picture: '/images/committee/neetu-gupta.jpg',
         },
+        {
+            id: 10,
+            name: 'Dr. Sayar Singh Shekhawat',
+            des: 'Associate Professor, CSE',
+            role: 'Publicity Chair',
+            picture: '/images/committee/sayar-singh.jpg',
+        },
+        {
+            id: 10,
+            name: 'Dr. Neelam Chaplot',
+            des: 'Associate Professor, CSE',
+            role: 'Technical Chair',
+            picture: '/images/committee/neelam.jpg',
+        },
+        {
+            id: 10,
+            name: 'Dr. Rishi Gupta',
+            des: 'Associate Professor, CSE',
+            role: 'Finance Chair',
+            picture: '/images/committee/rishi-gupta.jpg',
+        },
+        {
+            id: 10,
+            name: 'Dr. Aditya Sinha',
+            des: 'Assistant Professor, CSE',
+            role: 'Publication Chair',
+            picture: '/images/committee/aditya-sinha.jpg',
+        },
+        {
+            id: 10,
+            name: 'Dr. Mayank Namdev',
+            des: 'Assistant Professor, CSE',
+            role: 'Publication Chair',
+            picture: '/images/committee/mayank-namdev.jpg',
+        },
     ],
     technical: [
         {
