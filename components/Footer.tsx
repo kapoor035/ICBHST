@@ -13,39 +13,23 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
         {/* Left Column - Convener Details */}
         <div className="flex flex-col gap-3">
-          <div className="flex flex-col gap-0.5">
+          <div className="flex flex-col gap-1">
+            <h4 className="text-sm font-semibold text-white">Contact:</h4>
+            <a
+              href="mailto:trustnet2026@gmail.com"
+              className="text-sm text-gray-300 hover:text-white mb-1"
+            >
+              <b>Email:</b> trustnet2026@gmail.com
+            </a>
+            <h4 className="text-sm font-semibold text-white">
+              Dr. Satyabrata Roy (Program Co-Chair)
+            </h4>
             <h4 className="text-sm font-semibold text-white">
               Dr. Amit Garg (Convener)
             </h4>
-            <a
-              href="tel:+91-9897260563"
-              className="text-sm text-gray-300 hover:text-white"
-            >
-              +91-9897260563
-            </a>
-            <a
-              href="mailto:amit.garg@jaipur.manipal.edu"
-              className="text-sm text-gray-300 hover:text-white"
-            >
-              amit.garg@jaipur.manipal.edu
-            </a>
-          </div>
-          <div className="flex flex-col gap-0.5">
             <h4 className="text-sm font-semibold text-white">
-              Dr. Mahesh Jangid (Convener)
+              Dr. Ankur Pandey (Convener)
             </h4>
-            <a
-              href="tel:+91-7905307175"
-              className="text-sm text-gray-300 hover:text-white"
-            >
-              +91-9799969068
-            </a>
-            <a
-              href="mailto:mahesh.jangid@jaipur.manipal.edu"
-              className="text-sm text-gray-300 hover:text-white"
-            >
-              mahesh.jangid@jaipur.manipal.edu
-            </a>
           </div>
         </div>
 
