@@ -41,12 +41,12 @@ const Registration = () => {
               <tbody>
                 <tr>
                   <td className="border p-3">Students / Researchers</td>
-                  <td className="border p-3">9500</td>
+                  <td className="border p-3">9000</td>
                   <td className="border p-3">200</td>
                 </tr>
                 <tr>
                   <td className="border p-3">Academicians</td>
-                  <td className="border p-3">10500</td>
+                  <td className="border p-3">10000</td>
                   <td className="border p-3">250</td>
                 </tr>
                 <tr>
