@@ -50,13 +50,13 @@ const Navbar = () => {
         <div className="w-full flex flex-wrap justify-between items-center border-b-2">
           <div className="flex items-center gap-4">
             <Link href="/#" className="cursor-pointer">
-            <Image
-              className="w-44 sm:w-48 lg:w-60 p-2"
-              src={"/images/logo/muj-logo.svg"}
-              alt="CirCon'24"
-              width={250}
-              height={50}
-            />
+              <Image
+                className="w-44 sm:w-48 lg:w-60 p-2"
+                src={"/images/logo/muj-logo.svg"}
+                alt="CirCon'24"
+                width={250}
+                height={50}
+              />
             </Link>
             <span className="hidden lg:block text-gray-300 text-2xl">|</span>
             <div className="hidden lg:flex items-center gap-6">
@@ -198,7 +198,7 @@ const Navbar = () => {
                             dropdownItem.newTab
                           )
                         }
-                        className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold"
+                        className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold whitespace-nowrap"
                       >
                         {dropdownItem.label}
                       </button>
