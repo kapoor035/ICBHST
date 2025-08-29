@@ -196,8 +196,8 @@ const CallForPapers = () => {
             <h2 className="text-3xl font-semibold mb-12 text-center">
               Submission Timeline
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[1, 2, 3].map((index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[1, 2, 3, 4].map((index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -211,17 +211,22 @@ const CallForPapers = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">
                     {index === 1
-                      ? "Abstract Submission Deadline"
+                      ? "Call for Papers"
                       : index === 2
-                      ? "Notification of Acceptance"
-                      : "Full Paper Submission Deadline"}
+                      ? "Submission"
+                      : index === 3
+                      ? "Acceptance"
+                      : "Registration End"}
                   </h3>
+
                   <p className="text-gray-600">
                     {index === 1
-                      ? "September 25, 2025"
+                      ? "September 9, 2025"
                       : index === 2
-                      ? "January 5, 2026"
-                      : "January 20, 2026"}
+                      ? "November 15, 2025"
+                      : index === 3
+                      ? "December 15, 2025"
+                      : "December 25, 2025"}
                   </p>
                 </motion.div>
               ))}
@@ -297,14 +302,9 @@ const CallForPapers = () => {
             <h2 className="text-3xl font-semibold mb-8">
               Publication and Indexing
             </h2>
-            <p className="text-lg mb-12">
-              All presented papers will be published in the Abstract Book by the
-              Department of Fashion Design, Manipal University Jaipur. Selected
-              high-quality papers will be eligible for publication in Scopus
-              journals following a rigorous peer review process.
-            </p>
+            <p className="text-lg mb-12">Submitted for approval</p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -346,7 +346,7 @@ const CallForPapers = () => {
                 </svg>
                 Scopus Journals
               </motion.button>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
