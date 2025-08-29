@@ -11,9 +11,7 @@ const Publication = () => {
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
           </h2>
           <p className="max-w-3xl text-center text-gray-700 text-lg">
-            The proceedings of TrustNet 2026 will be published in Lecture Notes
-            in Networks and Systems (LNNS). LNNS is abstracted and indexed in
-            SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH.
+            Submitted for approval
           </p>
           {/* <div className="flex flex-wrap justify-center items-center gap-8">
             <Image
