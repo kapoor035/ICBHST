@@ -58,8 +58,8 @@ const Navbar = () => {
                 height={50}
               />
             </Link>
-            <span className="hidden lg:block text-gray-300 text-2xl">|</span>
-            <div className="hidden lg:flex items-center gap-6">
+            {/* <span className="hidden lg:block text-gray-300 text-2xl">|</span> */}
+            {/* <div className="hidden lg:flex items-center gap-6">
               <Image
                 className="w-24"
                 src="/images/logo/scopus-logo.png"
@@ -75,7 +75,7 @@ const Navbar = () => {
                 width={110}
                 height={45}
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile menu button */}

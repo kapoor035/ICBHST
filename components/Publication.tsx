@@ -15,7 +15,7 @@ const Publication = () => {
             in Networks and Systems (LNNS). LNNS is abstracted and indexed in
             SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH.
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
+          {/* <div className="flex flex-wrap justify-center items-center gap-8">
             <Image
               src="/images/logo/scopus-logo.png"
               alt="Scopus Logo"
@@ -30,7 +30,7 @@ const Publication = () => {
               height={100}
               className="object-contain"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
