@@ -38,7 +38,8 @@ const AuthorGuidelines = () => {
             advancements in AI and computing applications.
           </p>
 
-          <p className="mb-8 text-center">
+          {/* todo  */}
+          {/* <p className="mb-8 text-center">
             <strong>Paper Submission Link:</strong>{" "}
             <a
               href="https://cmt3.research.microsoft.com/ICAIC2025"
@@ -46,7 +47,7 @@ const AuthorGuidelines = () => {
             >
               https://cmt3.research.microsoft.com/ICAIC2025
             </a>
-          </p>
+          </p> */}
 
           <h2 className="text-3xl font-bold mb-4">
             Manuscript Preparation and Submission Guidelines
