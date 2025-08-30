@@ -11,7 +11,10 @@ const Publication = () => {
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
           </h2>
           <p className="max-w-3xl text-center text-gray-700 text-lg">
-            Submitted for approval
+            Submitted to Springer for approval.
+          </p>
+          <p className="max-w-3xl text-justify text-gray-700 text-lg ">
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
           {/* <div className="flex flex-wrap justify-center items-center gap-8">
             <Image

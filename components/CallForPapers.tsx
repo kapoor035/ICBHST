@@ -302,8 +302,10 @@ const CallForPapers = () => {
             <h2 className="text-3xl font-semibold mb-8">
               Publication and Indexing
             </h2>
-            <p className="text-lg mb-12">Submitted for approval</p>
-
+            <p className="text-lg mb-12">Submitted to Springer for approval.</p>
+            <p className="text-lg mb-12 text-justify text-gray-700 text-lg ">
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
                 whileHover={{ scale: 1.02 }}
