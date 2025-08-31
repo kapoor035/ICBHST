@@ -50,7 +50,7 @@ const Hero = () => {
             Register Now
           </button>
           <button
-            onClick={() => router.push("/call-for-papers")}
+            onClick={() => window.open("https://cmt3.research.microsoft.com/TrustNet2026", "_blank", "noopener,noreferrer")}
             className="px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-opacity-90 transition-all"
           >
             Submit Paper
