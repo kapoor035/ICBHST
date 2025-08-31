@@ -59,7 +59,7 @@ export const menu = [
             {
                 id: 'submission',
                 label: 'Paper Submission',
-                link: '#', // todo
+                link: 'https://cmt3.research.microsoft.com/TrustNet2026',
                 newTab: true,
             },
             {
