@@ -38,16 +38,21 @@ const AuthorGuidelines = () => {
             advancements in AI and computing applications.
           </p>
 
-          {/* todo  */}
-          {/* <p className="mb-8 text-center">
+          
+          <p className="mb-8 text-center">
             <strong>Paper Submission Link:</strong>{" "}
             <a
-              href="https://cmt3.research.microsoft.com/ICAIC2025"
+              href="https://cmt3.research.microsoft.com/TrustNet2026"
               className="text-blue-600 hover:text-blue-800"
+              target="_blank"
             >
-              https://cmt3.research.microsoft.com/ICAIC2025
+              https://cmt3.research.microsoft.com/TrustNet2026
             </a>
-          </p> */}
+          </p>
+
+          <p className="mb-6">
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
 
           <h2 className="text-3xl font-bold mb-4">
             Manuscript Preparation and Submission Guidelines
