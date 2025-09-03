@@ -74,11 +74,6 @@ const Footer = () => {
           <p className="text-sm text-gray-300 font-light">
             &copy; 2025 All rights reserved.
           </p>
-          <Link
-            href="https://sdcmuj.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <p className="text-sm text-gray-400 flex items-center gap-1">
               Developed by -{" "}
               <Image
@@ -89,7 +84,6 @@ const Footer = () => {
               />{" "}
               WebDev Team
             </p>
-          </Link>
         </div>
       </div>
     </footer>
