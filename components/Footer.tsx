@@ -87,7 +87,7 @@ const Footer = () => {
                 width={30}
                 height={20}
               />{" "}
-              Web Team
+              WebDev Team
             </p>
           </Link>
         </div>
