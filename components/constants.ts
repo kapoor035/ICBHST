@@ -294,10 +294,10 @@ export const committee = {
         },
         {
             id: 10,
-            name: 'Dr. Neelam Chaplot',
-            des: 'Associate Professor, CSE',
+            name: 'Dr. Satpal Singh Kushwaha',
+            des: 'Assistant Professor, CSE',
             role: 'Technical Chair',
-            picture: '/images/committee/neelam.jpg',
+            picture: '/images/committee/satpal-singh-kushwaha.jpg',
         },
         {
             id: 10,
@@ -308,10 +308,10 @@ export const committee = {
         },
         {
             id: 10,
-            name: 'Dr. Aditya Sinha',
+            name: 'Dr. Akshay Jadhav',
             des: 'Assistant Professor, CSE',
             role: 'Publication Chair',
-            picture: '/images/committee/aditya-sinha.jpg',
+            picture: '/images/committee/akshay-jadhav.jpg',
         },
         {
             id: 10,
