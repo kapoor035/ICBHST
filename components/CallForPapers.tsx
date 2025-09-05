@@ -39,6 +39,9 @@ const tracksData = [
       "Security Protocols",
       "Sensor and Mobile Ad Hoc Network Security",
       "Wireless Network Security",
+      "Cryptography and Cryptanalysis",
+      "Quantum-Safe and Post-Quantum Cryptography",
+      "Computer Networks and Protocols",
     ],
   },
   {
@@ -49,6 +52,9 @@ const tracksData = [
       "Peer-to-Peer Security",
       "Security in Distributed Systems",
       "Security Information Systems Architecture",
+      "Blockchain and Distributed Ledger for Security",
+      "Next-Generation Networks (5G/6G, Vehicular, IoT, and Edge Networks)",
+      "Network Architectures: SDN, NFV, and Cloud-Based Networking",
     ],
   },
   {
@@ -64,6 +70,8 @@ const tracksData = [
       "Personal Data Protection for Information Systems",
       "Privacy Enhancing Technologies",
       "Security and Privacy Policies",
+      "Privacy-Preserving Technologies",
+      "Digital Forensics and Incident Response",
     ],
   },
   {
@@ -74,6 +82,9 @@ const tracksData = [
       "Attacks on Machine Learning",
       "Secure Federated Learning",
       "Security Vulnerabilities of Large Language Models",
+      "Artificial Intelligence for Security and Trust Management",
+      "Anomaly Detection and Threat Intelligence",
+      "Emerging Trends in Cybersecurity and Network Intelligence",
     ],
   },
   {
@@ -88,6 +99,9 @@ const tracksData = [
       "Security and Privacy in Smart Grids",
       "Security and Privacy in Social Networks",
       "Security and Privacy in the Cloud",
+      "Cyber-Physical Systems and IoT Security",
+      "Security in Smart Cities, Healthcare, and Critical Infrastructures",
+      "Secure Cloud and Edge Computing",
     ],
   },
   {
@@ -102,6 +116,8 @@ const tracksData = [
       "Secure Software Development Methodologies",
       "Security Verification and Validation",
       "Software Metrics",
+      "Trust Modeling and Risk Management in Networks",
+      "Lightweight Security for Resource-Constrained Devices",
     ],
   },
   {
@@ -113,6 +129,7 @@ const tracksData = [
       "Security Metrics and Measurement",
       "Security usability",
       "Trust Management and Reputation Systems",
+      "Intrusion Detection and Prevention Systems",
     ],
   },
 ];
@@ -243,7 +260,7 @@ const CallForPapers = () => {
           >
             <div className="container mx-auto">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-8 relative pb-3 uppercase">
-                Research Topics
+                Conference Tracks
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
               </h2>
 
@@ -304,7 +321,10 @@ const CallForPapers = () => {
             </h2>
             <p className="text-lg mb-12">Submitted to Springer for approval.</p>
             <p className="text-lg mb-12 text-justify text-gray-700 ">
-            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              The Microsoft CMT service was used for managing the peer-reviewing
+              process for this conference. This service was provided for free by
+              Microsoft and they bore all expenses, including costs for Azure
+              cloud services as well as for software development and support.
             </p>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button

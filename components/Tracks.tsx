@@ -31,6 +31,9 @@ const tracksData: TrackData[] = [
       "Security Protocols",
       "Sensor and Mobile Ad Hoc Network Security",
       "Wireless Network Security",
+      "Cryptography and Cryptanalysis",
+      "Quantum-Safe and Post-Quantum Cryptography",
+      "Computer Networks and Protocols",
     ],
   },
   {
@@ -41,6 +44,9 @@ const tracksData: TrackData[] = [
       "Peer-to-Peer Security",
       "Security in Distributed Systems",
       "Security Information Systems Architecture",
+      "Blockchain and Distributed Ledger for Security",
+      "Next-Generation Networks (5G/6G, Vehicular, IoT, and Edge Networks)",
+      "Network Architectures: SDN, NFV, and Cloud-Based Networking",
     ],
   },
   {
@@ -56,6 +62,8 @@ const tracksData: TrackData[] = [
       "Personal Data Protection for Information Systems",
       "Privacy Enhancing Technologies",
       "Security and Privacy Policies",
+      "Privacy-Preserving Technologies",
+      "Digital Forensics and Incident Response",
     ],
   },
   {
@@ -66,6 +74,9 @@ const tracksData: TrackData[] = [
       "Attacks on Machine Learning",
       "Secure Federated Learning",
       "Security Vulnerabilities of Large Language Models",
+      "Artificial Intelligence for Security and Trust Management",
+      "Anomaly Detection and Threat Intelligence",
+      "Emerging Trends in Cybersecurity and Network Intelligence",
     ],
   },
   {
@@ -80,6 +91,9 @@ const tracksData: TrackData[] = [
       "Security and Privacy in Smart Grids",
       "Security and Privacy in Social Networks",
       "Security and Privacy in the Cloud",
+      "Cyber-Physical Systems and IoT Security",
+      "Security in Smart Cities, Healthcare, and Critical Infrastructures",
+      "Secure Cloud and Edge Computing",
     ],
   },
   {
@@ -94,6 +108,8 @@ const tracksData: TrackData[] = [
       "Secure Software Development Methodologies",
       "Security Verification and Validation",
       "Software Metrics",
+      "Trust Modeling and Risk Management in Networks",
+      "Lightweight Security for Resource-Constrained Devices",
     ],
   },
   {
@@ -105,6 +121,7 @@ const tracksData: TrackData[] = [
       "Security Metrics and Measurement",
       "Security usability",
       "Trust Management and Reputation Systems",
+      "Intrusion Detection and Prevention Systems",
     ],
   },
   //   {
